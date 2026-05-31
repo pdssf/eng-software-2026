@@ -5,7 +5,7 @@ Este repositório contém os artefatos utilizados para reprodução parcial dos 
 ## Estruturas de pastas
 
 - `data` contém os dados utilizados para execução dos experimentos.
-- `src` contém os scripts usados para gerar os resultados dos experimentos. `run.sh` executa todos os experimentos e salva os resultados em arquivos de logs. Depois gera arquivos CSV correspondentes às tabelas reportadas no artiog.
+- `src` contém os scripts usados para gerar os resultados dos experimentos. `run.sh` executa todos os experimentos e salva os resultados em arquivos de logs. Depois gera arquivos CSV correspondentes às tabelas reportadas no artigo.
 - `logs` contém as saídas de todos os experimentos executados. As métricas de precisão, recall, F1 e AUC são extraídas do final destes arquivos. O repositório já contém os logs da última execução.
 - `tables` contém os arquivos CSV correspondentes às tabelas do artigo gerados a partir das métricas extraídas dos arquivos de log. O repositório já contém as tabelas geradas na última execução.
 

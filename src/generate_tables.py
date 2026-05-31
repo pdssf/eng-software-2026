@@ -204,6 +204,8 @@ def gen_table_4():
     gen_table_row(f, "3c", desired_metrics, "\t- data duplication")
     gen_table_row(f, "3d", desired_metrics, "\t- data duplication and leaked features")
 
+    gen_table_row(f, "5a", desired_metrics, "\t+ reimplemented leaked features")
+
     gen_table_row(f, "nn10", desired_metrics, "Golden Featurs kNN (with k = 10)")
     gen_table_row(f, "nn5", desired_metrics, "Golden Featurs kNN (with k = 5)")
     gen_table_row(f, "nn3", desired_metrics, "Golden Featurs kNN (with k = 3)")
@@ -215,9 +217,13 @@ def gen_table_4():
 def gen_table_5x(all_files, year, table_name):
   baseline_pattern = f"baseline_{year}_"
   dummy_pattern = f"dummy_{year}_"
-  desired_metrics = [3, 0]
+  desired_metrics = [1, 2, 3, 0]
   headers = [
     "Project",
+    "Precision",
+    "Precision (dummy)",
+    "Recall",
+    "Recall (dummy)",
     "F1",
     "F1 (dummy)",
     "AUC",
@@ -278,7 +284,8 @@ if __name__ == "__main__":
   gen_tables_3(log_files)
   gen_tables_knn(log_files)
   gen_only_leaked_table(log_files)
-  gen_table_4()
   gen_tables_5(log_files)
   gen_tables_7_by_project(log_files)
+
+  gen_table_4()
   gen_table_7()
