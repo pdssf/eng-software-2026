@@ -1,0 +1,638 @@
+@@@ A - classifier: SVC(class_weight='balanced', kernel='linear', probability=True)
+@@@ B - threshold stop at: 1
+@@@ C - Repeat number: 1
+@@@ D - common_header:  {'F101', 'F15-NA', 'F3-Project.MSG_DEBUG', 'F71-stefano@apache.org', 'F117', 'F116', 'F71-jkf@apache.org', 'F65', 'F77', 'F110', 'F3-null', 'F71-umagesh@apache.org', 'F3-FileOutputStream', 'F3-File', 'F3-PrintStream', 'F22', 'F71-dev-null@apache.org', 'F3-Project', 'F3-FileInputStream', 'F3-long', 'F71-conor@apache.org', 'F126', 'F25', 'F3-Object', 'F71-bodewig@apache.org', 'F115', 'F3-boolean', 'F3-String', 'F71-rubys@apache.org', 'F71-hibou@apache.org', 'F123', 'F71-jhm@apache.org', 'F104', 'F41', 'F71-donaldp@apache.org', 'F71-jglick@apache.org', 'F71-sbailliez@apache.org', 'F3-Long', 'F15-protected', 'F3-InputStream', 'F71-stevel@apache.org', 'F71-ehatcher@apache.org', 'F71-peterreilly@apache.org', 'category', 'F15-public', 'F120', 'F71-antoine@apache.org', 'F15-private', 'F3-byte[]', 'F3-Class', 'F71-costin@apache.org', 'F71-mbenson@apache.org', 'F3-int', 'F68', 'F3-char', 'F71-jskeet@apache.org', 'F3-Integer', 'F71-kevj@apache.org', 'F72', 'F3-NA', 'F105'}
+     F72   F25  ... F71-mbenson@apache.org F71-jhm@apache.org
+1  13254  4548  ...                      1                  0
+2  13254  4548  ...                      0                  0
+3   7195  3454  ...                      0                  0
+
+[3 rows x 60 columns]
+;.;
+   F72  F25  ...  F71-mbenson@apache.org  F71-jhm@apache.org
+0  1.0  1.0  ...                     1.0                 0.0
+1  1.0  1.0  ...                     0.0                 0.0
+2  0.0  0.0  ...                     0.0                 0.0
+
+[3 rows x 60 columns]
+training_x: (5, 60)
+training_y: 5
+testset_x: (30, 60)
+testset_y: 30
+              precision    recall  f1-score   support
+
+           0       0.60      1.00      0.75        18
+           1       0.00      0.00      0.00        12
+
+    accuracy                           0.60        30
+   macro avg       0.30      0.50      0.38        30
+weighted avg       0.36      0.60      0.45        30
+
+accuracy: 0.6
+0.0
+@@@ tn: 18, fp: 0, fn: 12, tp: 0
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 0, actual label: 1, predicted: 0
+iter: 1, sample_no: 24, actual label: 0, predicted: 0
+iter: 2, sample_no: 10, actual label: 1, predicted: 0
+iter: 3, sample_no: 2, actual label: 1, predicted: 0
+iter: 4, sample_no: 22, actual label: 1, predicted: 0
+iter: 5, sample_no: 15, actual label: 1, predicted: 0
+iter: 6, sample_no: 6, actual label: 1, predicted: 0
+iter: 7, sample_no: 4, actual label: 0, predicted: 0
+iter: 8, sample_no: 27, actual label: 1, predicted: 0
+iter: 9, sample_no: 9, actual label: 0, predicted: 0
+iter: 10, sample_no: 29, actual label: 0, predicted: 0
+iter: 11, sample_no: 9, actual label: 0, predicted: 0
+iter: 12, sample_no: 8, actual label: 0, predicted: 0
+iter: 13, sample_no: 5, actual label: 0, predicted: 0
+iter: 14, sample_no: 17, actual label: 1, predicted: 0
+iter: 15, sample_no: 9, actual label: 0, predicted: 0
+iter: 16, sample_no: 0, actual label: 1, predicted: 0
+iter: 17, sample_no: 22, actual label: 1, predicted: 0
+iter: 18, sample_no: 7, actual label: 1, predicted: 0
+iter: 19, sample_no: 6, actual label: 1, predicted: 0
+iter: 20, sample_no: 24, actual label: 0, predicted: 0
+iter: 21, sample_no: 29, actual label: 0, predicted: 0
+iter: 22, sample_no: 12, actual label: 1, predicted: 0
+iter: 23, sample_no: 24, actual label: 0, predicted: 0
+iter: 24, sample_no: 9, actual label: 0, predicted: 0
+number of samples: 30
+AUC 0.5740740740740741
+pos_get 12
+total recall stop_at 1
+@@@ C - Repeat number: 2
+@@@ D - common_header:  {'F101', 'F15-NA', 'F3-Project.MSG_DEBUG', 'F71-stefano@apache.org', 'F117', 'F116', 'F71-jkf@apache.org', 'F65', 'F77', 'F110', 'F3-null', 'F71-umagesh@apache.org', 'F3-FileOutputStream', 'F3-File', 'F3-PrintStream', 'F22', 'F71-dev-null@apache.org', 'F3-Project', 'F3-FileInputStream', 'F3-long', 'F71-conor@apache.org', 'F126', 'F25', 'F3-Object', 'F71-bodewig@apache.org', 'F115', 'F3-boolean', 'F3-String', 'F71-rubys@apache.org', 'F71-hibou@apache.org', 'F123', 'F71-jhm@apache.org', 'F104', 'F41', 'F71-donaldp@apache.org', 'F71-jglick@apache.org', 'F71-sbailliez@apache.org', 'F3-Long', 'F15-protected', 'F3-InputStream', 'F71-stevel@apache.org', 'F71-ehatcher@apache.org', 'F71-peterreilly@apache.org', 'category', 'F15-public', 'F120', 'F71-antoine@apache.org', 'F15-private', 'F3-byte[]', 'F3-Class', 'F71-costin@apache.org', 'F71-mbenson@apache.org', 'F3-int', 'F68', 'F3-char', 'F71-jskeet@apache.org', 'F3-Integer', 'F71-kevj@apache.org', 'F72', 'F3-NA', 'F105'}
+     F72   F25  ... F71-mbenson@apache.org F71-jhm@apache.org
+1  13254  4548  ...                      1                  0
+2  13254  4548  ...                      0                  0
+3   7195  3454  ...                      0                  0
+
+[3 rows x 60 columns]
+;.;
+   F72  F25  ...  F71-mbenson@apache.org  F71-jhm@apache.org
+0  1.0  1.0  ...                     1.0                 0.0
+1  1.0  1.0  ...                     0.0                 0.0
+2  0.0  0.0  ...                     0.0                 0.0
+
+[3 rows x 60 columns]
+training_x: (5, 60)
+training_y: 5
+testset_x: (30, 60)
+testset_y: 30
+              precision    recall  f1-score   support
+
+           0       0.60      1.00      0.75        18
+           1       0.00      0.00      0.00        12
+
+    accuracy                           0.60        30
+   macro avg       0.30      0.50      0.38        30
+weighted avg       0.36      0.60      0.45        30
+
+accuracy: 0.6
+0.0
+@@@ tn: 18, fp: 0, fn: 12, tp: 0
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 3, actual label: 0, predicted: 0
+iter: 1, sample_no: 17, actual label: 1, predicted: 0
+iter: 2, sample_no: 14, actual label: 0, predicted: 0
+iter: 3, sample_no: 5, actual label: 0, predicted: 0
+iter: 4, sample_no: 26, actual label: 0, predicted: 0
+iter: 5, sample_no: 1, actual label: 0, predicted: 0
+iter: 6, sample_no: 11, actual label: 0, predicted: 0
+iter: 7, sample_no: 24, actual label: 0, predicted: 0
+iter: 8, sample_no: 15, actual label: 1, predicted: 0
+iter: 9, sample_no: 3, actual label: 0, predicted: 0
+iter: 10, sample_no: 20, actual label: 1, predicted: 0
+iter: 11, sample_no: 27, actual label: 1, predicted: 0
+iter: 12, sample_no: 22, actual label: 1, predicted: 0
+iter: 13, sample_no: 11, actual label: 0, predicted: 0
+iter: 14, sample_no: 13, actual label: 0, predicted: 0
+iter: 15, sample_no: 20, actual label: 1, predicted: 0
+iter: 16, sample_no: 10, actual label: 1, predicted: 0
+iter: 17, sample_no: 0, actual label: 1, predicted: 0
+iter: 18, sample_no: 8, actual label: 0, predicted: 0
+iter: 19, sample_no: 26, actual label: 0, predicted: 0
+iter: 20, sample_no: 2, actual label: 1, predicted: 0
+iter: 21, sample_no: 6, actual label: 1, predicted: 0
+iter: 22, sample_no: 29, actual label: 0, predicted: 0
+iter: 23, sample_no: 16, actual label: 0, predicted: 0
+iter: 24, sample_no: 25, actual label: 1, predicted: 0
+number of samples: 30
+AUC 0.5740740740740741
+pos_get 12
+total recall stop_at 1
+@@@ C - Repeat number: 3
+@@@ D - common_header:  {'F101', 'F15-NA', 'F3-Project.MSG_DEBUG', 'F71-stefano@apache.org', 'F117', 'F116', 'F71-jkf@apache.org', 'F65', 'F77', 'F110', 'F3-null', 'F71-umagesh@apache.org', 'F3-FileOutputStream', 'F3-File', 'F3-PrintStream', 'F22', 'F71-dev-null@apache.org', 'F3-Project', 'F3-FileInputStream', 'F3-long', 'F71-conor@apache.org', 'F126', 'F25', 'F3-Object', 'F71-bodewig@apache.org', 'F115', 'F3-boolean', 'F3-String', 'F71-rubys@apache.org', 'F71-hibou@apache.org', 'F123', 'F71-jhm@apache.org', 'F104', 'F41', 'F71-donaldp@apache.org', 'F71-jglick@apache.org', 'F71-sbailliez@apache.org', 'F3-Long', 'F15-protected', 'F3-InputStream', 'F71-stevel@apache.org', 'F71-ehatcher@apache.org', 'F71-peterreilly@apache.org', 'category', 'F15-public', 'F120', 'F71-antoine@apache.org', 'F15-private', 'F3-byte[]', 'F3-Class', 'F71-costin@apache.org', 'F71-mbenson@apache.org', 'F3-int', 'F68', 'F3-char', 'F71-jskeet@apache.org', 'F3-Integer', 'F71-kevj@apache.org', 'F72', 'F3-NA', 'F105'}
+     F72   F25  ... F71-mbenson@apache.org F71-jhm@apache.org
+1  13254  4548  ...                      1                  0
+2  13254  4548  ...                      0                  0
+3   7195  3454  ...                      0                  0
+
+[3 rows x 60 columns]
+;.;
+   F72  F25  ...  F71-mbenson@apache.org  F71-jhm@apache.org
+0  1.0  1.0  ...                     1.0                 0.0
+1  1.0  1.0  ...                     0.0                 0.0
+2  0.0  0.0  ...                     0.0                 0.0
+
+[3 rows x 60 columns]
+training_x: (5, 60)
+training_y: 5
+testset_x: (30, 60)
+testset_y: 30
+              precision    recall  f1-score   support
+
+           0       0.60      1.00      0.75        18
+           1       0.00      0.00      0.00        12
+
+    accuracy                           0.60        30
+   macro avg       0.30      0.50      0.38        30
+weighted avg       0.36      0.60      0.45        30
+
+accuracy: 0.6
+0.0
+@@@ tn: 18, fp: 0, fn: 12, tp: 0
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 3, actual label: 0, predicted: 0
+iter: 1, sample_no: 13, actual label: 0, predicted: 0
+iter: 2, sample_no: 11, actual label: 0, predicted: 0
+iter: 3, sample_no: 5, actual label: 0, predicted: 0
+iter: 4, sample_no: 26, actual label: 0, predicted: 0
+iter: 5, sample_no: 19, actual label: 0, predicted: 0
+iter: 6, sample_no: 9, actual label: 0, predicted: 0
+iter: 7, sample_no: 29, actual label: 0, predicted: 0
+iter: 8, sample_no: 6, actual label: 1, predicted: 0
+iter: 9, sample_no: 6, actual label: 1, predicted: 0
+iter: 10, sample_no: 15, actual label: 1, predicted: 0
+iter: 11, sample_no: 17, actual label: 1, predicted: 0
+iter: 12, sample_no: 2, actual label: 1, predicted: 0
+iter: 13, sample_no: 15, actual label: 1, predicted: 0
+iter: 14, sample_no: 13, actual label: 0, predicted: 0
+iter: 15, sample_no: 6, actual label: 1, predicted: 0
+iter: 16, sample_no: 8, actual label: 0, predicted: 0
+iter: 17, sample_no: 7, actual label: 1, predicted: 0
+iter: 18, sample_no: 9, actual label: 0, predicted: 0
+iter: 19, sample_no: 15, actual label: 1, predicted: 0
+iter: 20, sample_no: 22, actual label: 1, predicted: 0
+iter: 21, sample_no: 20, actual label: 1, predicted: 0
+iter: 22, sample_no: 6, actual label: 1, predicted: 0
+iter: 23, sample_no: 28, actual label: 0, predicted: 0
+iter: 24, sample_no: 26, actual label: 0, predicted: 0
+number of samples: 30
+AUC 0.5740740740740741
+pos_get 12
+total recall stop_at 1
+@@@ C - Repeat number: 4
+@@@ D - common_header:  {'F101', 'F15-NA', 'F3-Project.MSG_DEBUG', 'F71-stefano@apache.org', 'F117', 'F116', 'F71-jkf@apache.org', 'F65', 'F77', 'F110', 'F3-null', 'F71-umagesh@apache.org', 'F3-FileOutputStream', 'F3-File', 'F3-PrintStream', 'F22', 'F71-dev-null@apache.org', 'F3-Project', 'F3-FileInputStream', 'F3-long', 'F71-conor@apache.org', 'F126', 'F25', 'F3-Object', 'F71-bodewig@apache.org', 'F115', 'F3-boolean', 'F3-String', 'F71-rubys@apache.org', 'F71-hibou@apache.org', 'F123', 'F71-jhm@apache.org', 'F104', 'F41', 'F71-donaldp@apache.org', 'F71-jglick@apache.org', 'F71-sbailliez@apache.org', 'F3-Long', 'F15-protected', 'F3-InputStream', 'F71-stevel@apache.org', 'F71-ehatcher@apache.org', 'F71-peterreilly@apache.org', 'category', 'F15-public', 'F120', 'F71-antoine@apache.org', 'F15-private', 'F3-byte[]', 'F3-Class', 'F71-costin@apache.org', 'F71-mbenson@apache.org', 'F3-int', 'F68', 'F3-char', 'F71-jskeet@apache.org', 'F3-Integer', 'F71-kevj@apache.org', 'F72', 'F3-NA', 'F105'}
+     F72   F25  ... F71-mbenson@apache.org F71-jhm@apache.org
+1  13254  4548  ...                      1                  0
+2  13254  4548  ...                      0                  0
+3   7195  3454  ...                      0                  0
+
+[3 rows x 60 columns]
+;.;
+   F72  F25  ...  F71-mbenson@apache.org  F71-jhm@apache.org
+0  1.0  1.0  ...                     1.0                 0.0
+1  1.0  1.0  ...                     0.0                 0.0
+2  0.0  0.0  ...                     0.0                 0.0
+
+[3 rows x 60 columns]
+training_x: (5, 60)
+training_y: 5
+testset_x: (30, 60)
+testset_y: 30
+              precision    recall  f1-score   support
+
+           0       0.60      1.00      0.75        18
+           1       0.00      0.00      0.00        12
+
+    accuracy                           0.60        30
+   macro avg       0.30      0.50      0.38        30
+weighted avg       0.36      0.60      0.45        30
+
+accuracy: 0.6
+0.0
+@@@ tn: 18, fp: 0, fn: 12, tp: 0
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 5, actual label: 0, predicted: 0
+iter: 1, sample_no: 24, actual label: 0, predicted: 0
+iter: 2, sample_no: 25, actual label: 1, predicted: 0
+iter: 3, sample_no: 7, actual label: 1, predicted: 0
+iter: 4, sample_no: 15, actual label: 1, predicted: 0
+iter: 5, sample_no: 19, actual label: 0, predicted: 0
+iter: 6, sample_no: 20, actual label: 1, predicted: 0
+iter: 7, sample_no: 21, actual label: 0, predicted: 0
+iter: 8, sample_no: 14, actual label: 0, predicted: 0
+iter: 9, sample_no: 14, actual label: 0, predicted: 0
+iter: 10, sample_no: 12, actual label: 1, predicted: 0
+iter: 11, sample_no: 12, actual label: 1, predicted: 0
+iter: 12, sample_no: 20, actual label: 1, predicted: 0
+iter: 13, sample_no: 13, actual label: 0, predicted: 0
+iter: 14, sample_no: 29, actual label: 0, predicted: 0
+iter: 15, sample_no: 28, actual label: 0, predicted: 0
+iter: 16, sample_no: 27, actual label: 1, predicted: 0
+iter: 17, sample_no: 26, actual label: 0, predicted: 0
+iter: 18, sample_no: 10, actual label: 1, predicted: 0
+iter: 19, sample_no: 6, actual label: 1, predicted: 0
+iter: 20, sample_no: 25, actual label: 1, predicted: 0
+iter: 21, sample_no: 0, actual label: 1, predicted: 0
+iter: 22, sample_no: 1, actual label: 0, predicted: 0
+iter: 23, sample_no: 6, actual label: 1, predicted: 0
+iter: 24, sample_no: 14, actual label: 0, predicted: 0
+number of samples: 30
+AUC 0.5740740740740741
+pos_get 12
+total recall stop_at 1
+@@@ C - Repeat number: 5
+@@@ D - common_header:  {'F101', 'F15-NA', 'F3-Project.MSG_DEBUG', 'F71-stefano@apache.org', 'F117', 'F116', 'F71-jkf@apache.org', 'F65', 'F77', 'F110', 'F3-null', 'F71-umagesh@apache.org', 'F3-FileOutputStream', 'F3-File', 'F3-PrintStream', 'F22', 'F71-dev-null@apache.org', 'F3-Project', 'F3-FileInputStream', 'F3-long', 'F71-conor@apache.org', 'F126', 'F25', 'F3-Object', 'F71-bodewig@apache.org', 'F115', 'F3-boolean', 'F3-String', 'F71-rubys@apache.org', 'F71-hibou@apache.org', 'F123', 'F71-jhm@apache.org', 'F104', 'F41', 'F71-donaldp@apache.org', 'F71-jglick@apache.org', 'F71-sbailliez@apache.org', 'F3-Long', 'F15-protected', 'F3-InputStream', 'F71-stevel@apache.org', 'F71-ehatcher@apache.org', 'F71-peterreilly@apache.org', 'category', 'F15-public', 'F120', 'F71-antoine@apache.org', 'F15-private', 'F3-byte[]', 'F3-Class', 'F71-costin@apache.org', 'F71-mbenson@apache.org', 'F3-int', 'F68', 'F3-char', 'F71-jskeet@apache.org', 'F3-Integer', 'F71-kevj@apache.org', 'F72', 'F3-NA', 'F105'}
+     F72   F25  ... F71-mbenson@apache.org F71-jhm@apache.org
+1  13254  4548  ...                      1                  0
+2  13254  4548  ...                      0                  0
+3   7195  3454  ...                      0                  0
+
+[3 rows x 60 columns]
+;.;
+   F72  F25  ...  F71-mbenson@apache.org  F71-jhm@apache.org
+0  1.0  1.0  ...                     1.0                 0.0
+1  1.0  1.0  ...                     0.0                 0.0
+2  0.0  0.0  ...                     0.0                 0.0
+
+[3 rows x 60 columns]
+training_x: (5, 60)
+training_y: 5
+testset_x: (30, 60)
+testset_y: 30
+              precision    recall  f1-score   support
+
+           0       0.60      1.00      0.75        18
+           1       0.00      0.00      0.00        12
+
+    accuracy                           0.60        30
+   macro avg       0.30      0.50      0.38        30
+weighted avg       0.36      0.60      0.45        30
+
+accuracy: 0.6
+0.0
+@@@ tn: 18, fp: 0, fn: 12, tp: 0
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 6, actual label: 1, predicted: 0
+iter: 1, sample_no: 14, actual label: 0, predicted: 0
+iter: 2, sample_no: 21, actual label: 0, predicted: 0
+iter: 3, sample_no: 13, actual label: 0, predicted: 0
+iter: 4, sample_no: 21, actual label: 0, predicted: 0
+iter: 5, sample_no: 10, actual label: 1, predicted: 0
+iter: 6, sample_no: 11, actual label: 0, predicted: 0
+iter: 7, sample_no: 20, actual label: 1, predicted: 0
+iter: 8, sample_no: 0, actual label: 1, predicted: 0
+iter: 9, sample_no: 12, actual label: 1, predicted: 0
+iter: 10, sample_no: 5, actual label: 0, predicted: 0
+iter: 11, sample_no: 23, actual label: 0, predicted: 0
+iter: 12, sample_no: 7, actual label: 1, predicted: 0
+iter: 13, sample_no: 1, actual label: 0, predicted: 0
+iter: 14, sample_no: 11, actual label: 0, predicted: 0
+iter: 15, sample_no: 23, actual label: 0, predicted: 0
+iter: 16, sample_no: 26, actual label: 0, predicted: 0
+iter: 17, sample_no: 25, actual label: 1, predicted: 0
+iter: 18, sample_no: 29, actual label: 0, predicted: 0
+iter: 19, sample_no: 26, actual label: 0, predicted: 0
+iter: 20, sample_no: 20, actual label: 1, predicted: 0
+iter: 21, sample_no: 4, actual label: 0, predicted: 0
+iter: 22, sample_no: 27, actual label: 1, predicted: 0
+iter: 23, sample_no: 16, actual label: 0, predicted: 0
+iter: 24, sample_no: 23, actual label: 0, predicted: 0
+number of samples: 30
+AUC 0.5740740740740741
+pos_get 12
+total recall stop_at 1
+@@@ C - Repeat number: 6
+@@@ D - common_header:  {'F101', 'F15-NA', 'F3-Project.MSG_DEBUG', 'F71-stefano@apache.org', 'F117', 'F116', 'F71-jkf@apache.org', 'F65', 'F77', 'F110', 'F3-null', 'F71-umagesh@apache.org', 'F3-FileOutputStream', 'F3-File', 'F3-PrintStream', 'F22', 'F71-dev-null@apache.org', 'F3-Project', 'F3-FileInputStream', 'F3-long', 'F71-conor@apache.org', 'F126', 'F25', 'F3-Object', 'F71-bodewig@apache.org', 'F115', 'F3-boolean', 'F3-String', 'F71-rubys@apache.org', 'F71-hibou@apache.org', 'F123', 'F71-jhm@apache.org', 'F104', 'F41', 'F71-donaldp@apache.org', 'F71-jglick@apache.org', 'F71-sbailliez@apache.org', 'F3-Long', 'F15-protected', 'F3-InputStream', 'F71-stevel@apache.org', 'F71-ehatcher@apache.org', 'F71-peterreilly@apache.org', 'category', 'F15-public', 'F120', 'F71-antoine@apache.org', 'F15-private', 'F3-byte[]', 'F3-Class', 'F71-costin@apache.org', 'F71-mbenson@apache.org', 'F3-int', 'F68', 'F3-char', 'F71-jskeet@apache.org', 'F3-Integer', 'F71-kevj@apache.org', 'F72', 'F3-NA', 'F105'}
+     F72   F25  ... F71-mbenson@apache.org F71-jhm@apache.org
+1  13254  4548  ...                      1                  0
+2  13254  4548  ...                      0                  0
+3   7195  3454  ...                      0                  0
+
+[3 rows x 60 columns]
+;.;
+   F72  F25  ...  F71-mbenson@apache.org  F71-jhm@apache.org
+0  1.0  1.0  ...                     1.0                 0.0
+1  1.0  1.0  ...                     0.0                 0.0
+2  0.0  0.0  ...                     0.0                 0.0
+
+[3 rows x 60 columns]
+training_x: (5, 60)
+training_y: 5
+testset_x: (30, 60)
+testset_y: 30
+              precision    recall  f1-score   support
+
+           0       0.60      1.00      0.75        18
+           1       0.00      0.00      0.00        12
+
+    accuracy                           0.60        30
+   macro avg       0.30      0.50      0.38        30
+weighted avg       0.36      0.60      0.45        30
+
+accuracy: 0.6
+0.0
+@@@ tn: 18, fp: 0, fn: 12, tp: 0
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 19, actual label: 0, predicted: 0
+iter: 1, sample_no: 24, actual label: 0, predicted: 0
+iter: 2, sample_no: 21, actual label: 0, predicted: 0
+iter: 3, sample_no: 20, actual label: 1, predicted: 0
+iter: 4, sample_no: 22, actual label: 1, predicted: 0
+iter: 5, sample_no: 24, actual label: 0, predicted: 0
+iter: 6, sample_no: 7, actual label: 1, predicted: 0
+iter: 7, sample_no: 25, actual label: 1, predicted: 0
+iter: 8, sample_no: 22, actual label: 1, predicted: 0
+iter: 9, sample_no: 29, actual label: 0, predicted: 0
+iter: 10, sample_no: 11, actual label: 0, predicted: 0
+iter: 11, sample_no: 18, actual label: 0, predicted: 0
+iter: 12, sample_no: 22, actual label: 1, predicted: 0
+iter: 13, sample_no: 15, actual label: 1, predicted: 0
+iter: 14, sample_no: 22, actual label: 1, predicted: 0
+iter: 15, sample_no: 7, actual label: 1, predicted: 0
+iter: 16, sample_no: 11, actual label: 0, predicted: 0
+iter: 17, sample_no: 27, actual label: 1, predicted: 0
+iter: 18, sample_no: 14, actual label: 0, predicted: 0
+iter: 19, sample_no: 7, actual label: 1, predicted: 0
+iter: 20, sample_no: 17, actual label: 1, predicted: 0
+iter: 21, sample_no: 15, actual label: 1, predicted: 0
+iter: 22, sample_no: 13, actual label: 0, predicted: 0
+iter: 23, sample_no: 1, actual label: 0, predicted: 0
+iter: 24, sample_no: 6, actual label: 1, predicted: 0
+number of samples: 30
+AUC 0.5740740740740741
+pos_get 12
+total recall stop_at 1
+@@@ C - Repeat number: 7
+@@@ D - common_header:  {'F101', 'F15-NA', 'F3-Project.MSG_DEBUG', 'F71-stefano@apache.org', 'F117', 'F116', 'F71-jkf@apache.org', 'F65', 'F77', 'F110', 'F3-null', 'F71-umagesh@apache.org', 'F3-FileOutputStream', 'F3-File', 'F3-PrintStream', 'F22', 'F71-dev-null@apache.org', 'F3-Project', 'F3-FileInputStream', 'F3-long', 'F71-conor@apache.org', 'F126', 'F25', 'F3-Object', 'F71-bodewig@apache.org', 'F115', 'F3-boolean', 'F3-String', 'F71-rubys@apache.org', 'F71-hibou@apache.org', 'F123', 'F71-jhm@apache.org', 'F104', 'F41', 'F71-donaldp@apache.org', 'F71-jglick@apache.org', 'F71-sbailliez@apache.org', 'F3-Long', 'F15-protected', 'F3-InputStream', 'F71-stevel@apache.org', 'F71-ehatcher@apache.org', 'F71-peterreilly@apache.org', 'category', 'F15-public', 'F120', 'F71-antoine@apache.org', 'F15-private', 'F3-byte[]', 'F3-Class', 'F71-costin@apache.org', 'F71-mbenson@apache.org', 'F3-int', 'F68', 'F3-char', 'F71-jskeet@apache.org', 'F3-Integer', 'F71-kevj@apache.org', 'F72', 'F3-NA', 'F105'}
+     F72   F25  ... F71-mbenson@apache.org F71-jhm@apache.org
+1  13254  4548  ...                      1                  0
+2  13254  4548  ...                      0                  0
+3   7195  3454  ...                      0                  0
+
+[3 rows x 60 columns]
+;.;
+   F72  F25  ...  F71-mbenson@apache.org  F71-jhm@apache.org
+0  1.0  1.0  ...                     1.0                 0.0
+1  1.0  1.0  ...                     0.0                 0.0
+2  0.0  0.0  ...                     0.0                 0.0
+
+[3 rows x 60 columns]
+training_x: (5, 60)
+training_y: 5
+testset_x: (30, 60)
+testset_y: 30
+              precision    recall  f1-score   support
+
+           0       0.60      1.00      0.75        18
+           1       0.00      0.00      0.00        12
+
+    accuracy                           0.60        30
+   macro avg       0.30      0.50      0.38        30
+weighted avg       0.36      0.60      0.45        30
+
+accuracy: 0.6
+0.0
+@@@ tn: 18, fp: 0, fn: 12, tp: 0
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 13, actual label: 0, predicted: 0
+iter: 1, sample_no: 17, actual label: 1, predicted: 0
+iter: 2, sample_no: 25, actual label: 1, predicted: 0
+iter: 3, sample_no: 1, actual label: 0, predicted: 0
+iter: 4, sample_no: 1, actual label: 0, predicted: 0
+iter: 5, sample_no: 22, actual label: 1, predicted: 0
+iter: 6, sample_no: 10, actual label: 1, predicted: 0
+iter: 7, sample_no: 11, actual label: 0, predicted: 0
+iter: 8, sample_no: 24, actual label: 0, predicted: 0
+iter: 9, sample_no: 8, actual label: 0, predicted: 0
+iter: 10, sample_no: 16, actual label: 0, predicted: 0
+iter: 11, sample_no: 29, actual label: 0, predicted: 0
+iter: 12, sample_no: 18, actual label: 0, predicted: 0
+iter: 13, sample_no: 0, actual label: 1, predicted: 0
+iter: 14, sample_no: 25, actual label: 1, predicted: 0
+iter: 15, sample_no: 21, actual label: 0, predicted: 0
+iter: 16, sample_no: 2, actual label: 1, predicted: 0
+iter: 17, sample_no: 26, actual label: 0, predicted: 0
+iter: 18, sample_no: 14, actual label: 0, predicted: 0
+iter: 19, sample_no: 15, actual label: 1, predicted: 0
+iter: 20, sample_no: 11, actual label: 0, predicted: 0
+iter: 21, sample_no: 20, actual label: 1, predicted: 0
+iter: 22, sample_no: 1, actual label: 0, predicted: 0
+iter: 23, sample_no: 13, actual label: 0, predicted: 0
+iter: 24, sample_no: 25, actual label: 1, predicted: 0
+number of samples: 30
+AUC 0.5740740740740741
+pos_get 12
+total recall stop_at 1
+@@@ C - Repeat number: 8
+@@@ D - common_header:  {'F101', 'F15-NA', 'F3-Project.MSG_DEBUG', 'F71-stefano@apache.org', 'F117', 'F116', 'F71-jkf@apache.org', 'F65', 'F77', 'F110', 'F3-null', 'F71-umagesh@apache.org', 'F3-FileOutputStream', 'F3-File', 'F3-PrintStream', 'F22', 'F71-dev-null@apache.org', 'F3-Project', 'F3-FileInputStream', 'F3-long', 'F71-conor@apache.org', 'F126', 'F25', 'F3-Object', 'F71-bodewig@apache.org', 'F115', 'F3-boolean', 'F3-String', 'F71-rubys@apache.org', 'F71-hibou@apache.org', 'F123', 'F71-jhm@apache.org', 'F104', 'F41', 'F71-donaldp@apache.org', 'F71-jglick@apache.org', 'F71-sbailliez@apache.org', 'F3-Long', 'F15-protected', 'F3-InputStream', 'F71-stevel@apache.org', 'F71-ehatcher@apache.org', 'F71-peterreilly@apache.org', 'category', 'F15-public', 'F120', 'F71-antoine@apache.org', 'F15-private', 'F3-byte[]', 'F3-Class', 'F71-costin@apache.org', 'F71-mbenson@apache.org', 'F3-int', 'F68', 'F3-char', 'F71-jskeet@apache.org', 'F3-Integer', 'F71-kevj@apache.org', 'F72', 'F3-NA', 'F105'}
+     F72   F25  ... F71-mbenson@apache.org F71-jhm@apache.org
+1  13254  4548  ...                      1                  0
+2  13254  4548  ...                      0                  0
+3   7195  3454  ...                      0                  0
+
+[3 rows x 60 columns]
+;.;
+   F72  F25  ...  F71-mbenson@apache.org  F71-jhm@apache.org
+0  1.0  1.0  ...                     1.0                 0.0
+1  1.0  1.0  ...                     0.0                 0.0
+2  0.0  0.0  ...                     0.0                 0.0
+
+[3 rows x 60 columns]
+training_x: (5, 60)
+training_y: 5
+testset_x: (30, 60)
+testset_y: 30
+              precision    recall  f1-score   support
+
+           0       0.60      1.00      0.75        18
+           1       0.00      0.00      0.00        12
+
+    accuracy                           0.60        30
+   macro avg       0.30      0.50      0.38        30
+weighted avg       0.36      0.60      0.45        30
+
+accuracy: 0.6
+0.0
+@@@ tn: 18, fp: 0, fn: 12, tp: 0
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 0, actual label: 1, predicted: 0
+iter: 1, sample_no: 28, actual label: 0, predicted: 0
+iter: 2, sample_no: 26, actual label: 0, predicted: 0
+iter: 3, sample_no: 14, actual label: 0, predicted: 0
+iter: 4, sample_no: 27, actual label: 1, predicted: 0
+iter: 5, sample_no: 13, actual label: 0, predicted: 0
+iter: 6, sample_no: 4, actual label: 0, predicted: 0
+iter: 7, sample_no: 0, actual label: 1, predicted: 0
+iter: 8, sample_no: 23, actual label: 0, predicted: 0
+iter: 9, sample_no: 4, actual label: 0, predicted: 0
+iter: 10, sample_no: 11, actual label: 0, predicted: 0
+iter: 11, sample_no: 26, actual label: 0, predicted: 0
+iter: 12, sample_no: 6, actual label: 1, predicted: 0
+iter: 13, sample_no: 21, actual label: 0, predicted: 0
+iter: 14, sample_no: 28, actual label: 0, predicted: 0
+iter: 15, sample_no: 12, actual label: 1, predicted: 0
+iter: 16, sample_no: 24, actual label: 0, predicted: 0
+iter: 17, sample_no: 20, actual label: 1, predicted: 0
+iter: 18, sample_no: 19, actual label: 0, predicted: 0
+iter: 19, sample_no: 16, actual label: 0, predicted: 0
+iter: 20, sample_no: 13, actual label: 0, predicted: 0
+iter: 21, sample_no: 3, actual label: 0, predicted: 0
+iter: 22, sample_no: 9, actual label: 0, predicted: 0
+iter: 23, sample_no: 6, actual label: 1, predicted: 0
+iter: 24, sample_no: 2, actual label: 1, predicted: 0
+number of samples: 30
+AUC 0.5740740740740741
+pos_get 12
+total recall stop_at 1
+@@@ C - Repeat number: 9
+@@@ D - common_header:  {'F101', 'F15-NA', 'F3-Project.MSG_DEBUG', 'F71-stefano@apache.org', 'F117', 'F116', 'F71-jkf@apache.org', 'F65', 'F77', 'F110', 'F3-null', 'F71-umagesh@apache.org', 'F3-FileOutputStream', 'F3-File', 'F3-PrintStream', 'F22', 'F71-dev-null@apache.org', 'F3-Project', 'F3-FileInputStream', 'F3-long', 'F71-conor@apache.org', 'F126', 'F25', 'F3-Object', 'F71-bodewig@apache.org', 'F115', 'F3-boolean', 'F3-String', 'F71-rubys@apache.org', 'F71-hibou@apache.org', 'F123', 'F71-jhm@apache.org', 'F104', 'F41', 'F71-donaldp@apache.org', 'F71-jglick@apache.org', 'F71-sbailliez@apache.org', 'F3-Long', 'F15-protected', 'F3-InputStream', 'F71-stevel@apache.org', 'F71-ehatcher@apache.org', 'F71-peterreilly@apache.org', 'category', 'F15-public', 'F120', 'F71-antoine@apache.org', 'F15-private', 'F3-byte[]', 'F3-Class', 'F71-costin@apache.org', 'F71-mbenson@apache.org', 'F3-int', 'F68', 'F3-char', 'F71-jskeet@apache.org', 'F3-Integer', 'F71-kevj@apache.org', 'F72', 'F3-NA', 'F105'}
+     F72   F25  ... F71-mbenson@apache.org F71-jhm@apache.org
+1  13254  4548  ...                      1                  0
+2  13254  4548  ...                      0                  0
+3   7195  3454  ...                      0                  0
+
+[3 rows x 60 columns]
+;.;
+   F72  F25  ...  F71-mbenson@apache.org  F71-jhm@apache.org
+0  1.0  1.0  ...                     1.0                 0.0
+1  1.0  1.0  ...                     0.0                 0.0
+2  0.0  0.0  ...                     0.0                 0.0
+
+[3 rows x 60 columns]
+training_x: (5, 60)
+training_y: 5
+testset_x: (30, 60)
+testset_y: 30
+              precision    recall  f1-score   support
+
+           0       0.60      1.00      0.75        18
+           1       0.00      0.00      0.00        12
+
+    accuracy                           0.60        30
+   macro avg       0.30      0.50      0.38        30
+weighted avg       0.36      0.60      0.45        30
+
+accuracy: 0.6
+0.0
+@@@ tn: 18, fp: 0, fn: 12, tp: 0
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 25, actual label: 1, predicted: 0
+iter: 1, sample_no: 22, actual label: 1, predicted: 0
+iter: 2, sample_no: 27, actual label: 1, predicted: 0
+iter: 3, sample_no: 25, actual label: 1, predicted: 0
+iter: 4, sample_no: 12, actual label: 1, predicted: 0
+iter: 5, sample_no: 26, actual label: 0, predicted: 0
+iter: 6, sample_no: 26, actual label: 0, predicted: 0
+iter: 7, sample_no: 14, actual label: 0, predicted: 0
+iter: 8, sample_no: 25, actual label: 1, predicted: 0
+iter: 9, sample_no: 3, actual label: 0, predicted: 0
+iter: 10, sample_no: 16, actual label: 0, predicted: 0
+iter: 11, sample_no: 12, actual label: 1, predicted: 0
+iter: 12, sample_no: 14, actual label: 0, predicted: 0
+iter: 13, sample_no: 13, actual label: 0, predicted: 0
+iter: 14, sample_no: 2, actual label: 1, predicted: 0
+iter: 15, sample_no: 2, actual label: 1, predicted: 0
+iter: 16, sample_no: 12, actual label: 1, predicted: 0
+iter: 17, sample_no: 12, actual label: 1, predicted: 0
+iter: 18, sample_no: 0, actual label: 1, predicted: 0
+iter: 19, sample_no: 21, actual label: 0, predicted: 0
+iter: 20, sample_no: 10, actual label: 1, predicted: 0
+iter: 21, sample_no: 21, actual label: 0, predicted: 0
+iter: 22, sample_no: 10, actual label: 1, predicted: 0
+iter: 23, sample_no: 4, actual label: 0, predicted: 0
+iter: 24, sample_no: 23, actual label: 0, predicted: 0
+number of samples: 30
+AUC 0.5740740740740741
+pos_get 12
+total recall stop_at 1
+@@@ C - Repeat number: 10
+@@@ D - common_header:  {'F101', 'F15-NA', 'F3-Project.MSG_DEBUG', 'F71-stefano@apache.org', 'F117', 'F116', 'F71-jkf@apache.org', 'F65', 'F77', 'F110', 'F3-null', 'F71-umagesh@apache.org', 'F3-FileOutputStream', 'F3-File', 'F3-PrintStream', 'F22', 'F71-dev-null@apache.org', 'F3-Project', 'F3-FileInputStream', 'F3-long', 'F71-conor@apache.org', 'F126', 'F25', 'F3-Object', 'F71-bodewig@apache.org', 'F115', 'F3-boolean', 'F3-String', 'F71-rubys@apache.org', 'F71-hibou@apache.org', 'F123', 'F71-jhm@apache.org', 'F104', 'F41', 'F71-donaldp@apache.org', 'F71-jglick@apache.org', 'F71-sbailliez@apache.org', 'F3-Long', 'F15-protected', 'F3-InputStream', 'F71-stevel@apache.org', 'F71-ehatcher@apache.org', 'F71-peterreilly@apache.org', 'category', 'F15-public', 'F120', 'F71-antoine@apache.org', 'F15-private', 'F3-byte[]', 'F3-Class', 'F71-costin@apache.org', 'F71-mbenson@apache.org', 'F3-int', 'F68', 'F3-char', 'F71-jskeet@apache.org', 'F3-Integer', 'F71-kevj@apache.org', 'F72', 'F3-NA', 'F105'}
+     F72   F25  ... F71-mbenson@apache.org F71-jhm@apache.org
+1  13254  4548  ...                      1                  0
+2  13254  4548  ...                      0                  0
+3   7195  3454  ...                      0                  0
+
+[3 rows x 60 columns]
+;.;
+   F72  F25  ...  F71-mbenson@apache.org  F71-jhm@apache.org
+0  1.0  1.0  ...                     1.0                 0.0
+1  1.0  1.0  ...                     0.0                 0.0
+2  0.0  0.0  ...                     0.0                 0.0
+
+[3 rows x 60 columns]
+training_x: (5, 60)
+training_y: 5
+testset_x: (30, 60)
+testset_y: 30
+              precision    recall  f1-score   support
+
+           0       0.60      1.00      0.75        18
+           1       0.00      0.00      0.00        12
+
+    accuracy                           0.60        30
+   macro avg       0.30      0.50      0.38        30
+weighted avg       0.36      0.60      0.45        30
+
+accuracy: 0.6
+0.0
+@@@ tn: 18, fp: 0, fn: 12, tp: 0
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 28, actual label: 0, predicted: 0
+iter: 1, sample_no: 22, actual label: 1, predicted: 0
+iter: 2, sample_no: 16, actual label: 0, predicted: 0
+iter: 3, sample_no: 10, actual label: 1, predicted: 0
+iter: 4, sample_no: 5, actual label: 0, predicted: 0
+iter: 5, sample_no: 0, actual label: 1, predicted: 0
+iter: 6, sample_no: 4, actual label: 0, predicted: 0
+iter: 7, sample_no: 21, actual label: 0, predicted: 0
+iter: 8, sample_no: 8, actual label: 0, predicted: 0
+iter: 9, sample_no: 10, actual label: 1, predicted: 0
+iter: 10, sample_no: 23, actual label: 0, predicted: 0
+iter: 11, sample_no: 24, actual label: 0, predicted: 0
+iter: 12, sample_no: 2, actual label: 1, predicted: 0
+iter: 13, sample_no: 6, actual label: 1, predicted: 0
+iter: 14, sample_no: 7, actual label: 1, predicted: 0
+iter: 15, sample_no: 4, actual label: 0, predicted: 0
+iter: 16, sample_no: 15, actual label: 1, predicted: 0
+iter: 17, sample_no: 28, actual label: 0, predicted: 0
+iter: 18, sample_no: 15, actual label: 1, predicted: 0
+iter: 19, sample_no: 21, actual label: 0, predicted: 0
+iter: 20, sample_no: 6, actual label: 1, predicted: 0
+iter: 21, sample_no: 7, actual label: 1, predicted: 0
+iter: 22, sample_no: 10, actual label: 1, predicted: 0
+iter: 23, sample_no: 26, actual label: 0, predicted: 0
+iter: 24, sample_no: 9, actual label: 0, predicted: 0
+number of samples: 30
+AUC 0.5740740740740741
+pos_get 12
+total recall stop_at 1
+----------threshold stop at----------: 1
+AUC [0.5740740740740741, 0.5740740740740741, 0.5740740740740741, 0.5740740740740741, 0.5740740740740741, 0.5740740740740741, 0.5740740740740741, 0.5740740740740741, 0.5740740740740741, 0.5740740740740741]
+AUC_median 0.5740740740740741
+AUC_iqr 0.0
+cost [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+COST_med 1.0
+COST_iqr 0.0
+f1_pos_list [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0)]
+f1_pos_med 0.0
+total_tn 180
+total_fp 0
+total_fn 120
+total_tp 0
+p= nan
+r= 0.0
+f= nan

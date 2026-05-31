@@ -1,0 +1,648 @@
+@@@ A - classifier: SVC(class_weight='balanced', kernel='linear', probability=True)
+@@@ B - threshold stop at: 1
+@@@ C - Repeat number: 1
+will not use leaked features
+@@@ D - common_header:  {'F3-NA', 'F71-kmarsden@apache.org', 'F71-djd@apache.org', 'F71-suresht@apache.org', 'F71-bernt@apache.org', 'F3-PrintStream', 'F71-rhillegas@apache.org', 'F71-bandaram@apache.org', 'F71-fuzzylogic@apache.org', 'F68', 'F3-TransactionController', 'F3-byte[]', 'F3-Integer', 'F71-myrnavl@apache.org', 'F65', 'F71-bakksjo@apache.org', 'F71-kahatlen@apache.org', 'F72', 'F3-String', 'F123', 'F3-InputStream', 'F3-boolean', 'F3-Long', 'F3-int', 'F3-ResultSet', 'F71-mamta@apache.org', 'F71-coar@apache.org', 'F41', 'F3-Connection', 'F101', 'F71-dyre@apache.org', 'F15-public', 'F15-private', 'F15-NA', 'F71-davidvc@apache.org', 'F71-kristwaa@apache.org', 'F71-dag@apache.org', 'F71-bpendleton@apache.org', 'F104', 'F71-lilywei@apache.org', 'F3-int[]', 'F77', 'F71-mikem@apache.org', 'category', 'F3-char', 'F3-null', 'F25', 'F3-PrintWriter', 'F3-long', 'F3-SQLException', 'F126', 'F15-protected', 'F71-oysteing@apache.org', 'F3-QualifiedIdentifier', 'F22', 'F105'}
+    F72   F25  ... F71-bpendleton@apache.org F71-coar@apache.org
+1  3644  2104  ...                         0                   0
+2  3346  1938  ...                         0                   0
+3  3346  1938  ...                         0                   0
+
+[3 rows x 55 columns]
+;.;
+        F72       F25  ...  F71-bpendleton@apache.org  F71-coar@apache.org
+0  0.416807  0.597897  ...                        0.0                  0.0
+1  0.378101  0.550725  ...                        0.0                  0.0
+2  0.378101  0.550725  ...                        0.0                  0.0
+
+[3 rows x 55 columns]
+training_x: (2479, 55)
+training_y: 2479
+testset_x: (98, 55)
+testset_y: 98
+              precision    recall  f1-score   support
+
+           0       0.87      0.50      0.64        82
+           1       0.20      0.62      0.30        16
+
+    accuracy                           0.52        98
+   macro avg       0.53      0.56      0.47        98
+weighted avg       0.76      0.52      0.58        98
+
+accuracy: 0.5204081632653061
+0.29850746268656714
+@@@ tn: 41, fp: 41, fn: 6, tp: 10
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 64, actual label: 0, predicted: 1
+iter: 1, sample_no: 79, actual label: 0, predicted: 1
+iter: 2, sample_no: 28, actual label: 0, predicted: 0
+iter: 3, sample_no: 89, actual label: 0, predicted: 0
+iter: 4, sample_no: 74, actual label: 0, predicted: 1
+iter: 5, sample_no: 38, actual label: 0, predicted: 0
+iter: 6, sample_no: 23, actual label: 0, predicted: 1
+iter: 7, sample_no: 47, actual label: 1, predicted: 1
+iter: 8, sample_no: 30, actual label: 0, predicted: 0
+iter: 9, sample_no: 5, actual label: 1, predicted: 1
+iter: 10, sample_no: 7, actual label: 1, predicted: 0
+iter: 11, sample_no: 2, actual label: 0, predicted: 0
+iter: 12, sample_no: 17, actual label: 1, predicted: 1
+iter: 13, sample_no: 3, actual label: 0, predicted: 1
+iter: 14, sample_no: 1, actual label: 0, predicted: 0
+iter: 15, sample_no: 0, actual label: 1, predicted: 1
+iter: 16, sample_no: 64, actual label: 0, predicted: 1
+iter: 17, sample_no: 30, actual label: 0, predicted: 0
+iter: 18, sample_no: 40, actual label: 0, predicted: 0
+iter: 19, sample_no: 97, actual label: 0, predicted: 1
+iter: 20, sample_no: 85, actual label: 0, predicted: 1
+iter: 21, sample_no: 79, actual label: 0, predicted: 1
+iter: 22, sample_no: 79, actual label: 0, predicted: 1
+iter: 23, sample_no: 81, actual label: 0, predicted: 1
+iter: 24, sample_no: 21, actual label: 0, predicted: 0
+number of samples: 98
+AUC 0.59375
+pos_get 16
+total recall stop_at 1.0
+@@@ C - Repeat number: 2
+will not use leaked features
+@@@ D - common_header:  {'F3-NA', 'F71-kmarsden@apache.org', 'F71-djd@apache.org', 'F71-suresht@apache.org', 'F71-bernt@apache.org', 'F3-PrintStream', 'F71-rhillegas@apache.org', 'F71-bandaram@apache.org', 'F71-fuzzylogic@apache.org', 'F68', 'F3-TransactionController', 'F3-byte[]', 'F3-Integer', 'F71-myrnavl@apache.org', 'F65', 'F71-bakksjo@apache.org', 'F71-kahatlen@apache.org', 'F72', 'F3-String', 'F123', 'F3-InputStream', 'F3-boolean', 'F3-Long', 'F3-int', 'F3-ResultSet', 'F71-mamta@apache.org', 'F71-coar@apache.org', 'F41', 'F3-Connection', 'F101', 'F71-dyre@apache.org', 'F15-public', 'F15-private', 'F15-NA', 'F71-davidvc@apache.org', 'F71-kristwaa@apache.org', 'F71-dag@apache.org', 'F71-bpendleton@apache.org', 'F104', 'F71-lilywei@apache.org', 'F3-int[]', 'F77', 'F71-mikem@apache.org', 'category', 'F3-char', 'F3-null', 'F25', 'F3-PrintWriter', 'F3-long', 'F3-SQLException', 'F126', 'F15-protected', 'F71-oysteing@apache.org', 'F3-QualifiedIdentifier', 'F22', 'F105'}
+    F72   F25  ... F71-bpendleton@apache.org F71-coar@apache.org
+1  3644  2104  ...                         0                   0
+2  3346  1938  ...                         0                   0
+3  3346  1938  ...                         0                   0
+
+[3 rows x 55 columns]
+;.;
+        F72       F25  ...  F71-bpendleton@apache.org  F71-coar@apache.org
+0  0.416807  0.597897  ...                        0.0                  0.0
+1  0.378101  0.550725  ...                        0.0                  0.0
+2  0.378101  0.550725  ...                        0.0                  0.0
+
+[3 rows x 55 columns]
+training_x: (2479, 55)
+training_y: 2479
+testset_x: (98, 55)
+testset_y: 98
+              precision    recall  f1-score   support
+
+           0       0.87      0.50      0.64        82
+           1       0.20      0.62      0.30        16
+
+    accuracy                           0.52        98
+   macro avg       0.53      0.56      0.47        98
+weighted avg       0.76      0.52      0.58        98
+
+accuracy: 0.5204081632653061
+0.29850746268656714
+@@@ tn: 41, fp: 41, fn: 6, tp: 10
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 35, actual label: 0, predicted: 0
+iter: 1, sample_no: 13, actual label: 0, predicted: 0
+iter: 2, sample_no: 29, actual label: 0, predicted: 0
+iter: 3, sample_no: 44, actual label: 1, predicted: 1
+iter: 4, sample_no: 69, actual label: 0, predicted: 1
+iter: 5, sample_no: 0, actual label: 1, predicted: 1
+iter: 6, sample_no: 82, actual label: 0, predicted: 1
+iter: 7, sample_no: 51, actual label: 0, predicted: 1
+iter: 8, sample_no: 6, actual label: 1, predicted: 1
+iter: 9, sample_no: 3, actual label: 0, predicted: 1
+iter: 10, sample_no: 63, actual label: 0, predicted: 1
+iter: 11, sample_no: 79, actual label: 0, predicted: 1
+iter: 12, sample_no: 11, actual label: 0, predicted: 0
+iter: 13, sample_no: 54, actual label: 0, predicted: 1
+iter: 14, sample_no: 76, actual label: 0, predicted: 1
+iter: 15, sample_no: 97, actual label: 0, predicted: 1
+iter: 16, sample_no: 42, actual label: 0, predicted: 0
+iter: 17, sample_no: 82, actual label: 0, predicted: 1
+iter: 18, sample_no: 15, actual label: 0, predicted: 0
+iter: 19, sample_no: 26, actual label: 0, predicted: 0
+iter: 20, sample_no: 74, actual label: 0, predicted: 1
+iter: 21, sample_no: 12, actual label: 0, predicted: 0
+iter: 22, sample_no: 83, actual label: 1, predicted: 1
+iter: 23, sample_no: 50, actual label: 0, predicted: 1
+iter: 24, sample_no: 0, actual label: 1, predicted: 1
+number of samples: 98
+AUC 0.5929878048780488
+pos_get 16
+total recall stop_at 1.0
+@@@ C - Repeat number: 3
+will not use leaked features
+@@@ D - common_header:  {'F3-NA', 'F71-kmarsden@apache.org', 'F71-djd@apache.org', 'F71-suresht@apache.org', 'F71-bernt@apache.org', 'F3-PrintStream', 'F71-rhillegas@apache.org', 'F71-bandaram@apache.org', 'F71-fuzzylogic@apache.org', 'F68', 'F3-TransactionController', 'F3-byte[]', 'F3-Integer', 'F71-myrnavl@apache.org', 'F65', 'F71-bakksjo@apache.org', 'F71-kahatlen@apache.org', 'F72', 'F3-String', 'F123', 'F3-InputStream', 'F3-boolean', 'F3-Long', 'F3-int', 'F3-ResultSet', 'F71-mamta@apache.org', 'F71-coar@apache.org', 'F41', 'F3-Connection', 'F101', 'F71-dyre@apache.org', 'F15-public', 'F15-private', 'F15-NA', 'F71-davidvc@apache.org', 'F71-kristwaa@apache.org', 'F71-dag@apache.org', 'F71-bpendleton@apache.org', 'F104', 'F71-lilywei@apache.org', 'F3-int[]', 'F77', 'F71-mikem@apache.org', 'category', 'F3-char', 'F3-null', 'F25', 'F3-PrintWriter', 'F3-long', 'F3-SQLException', 'F126', 'F15-protected', 'F71-oysteing@apache.org', 'F3-QualifiedIdentifier', 'F22', 'F105'}
+    F72   F25  ... F71-bpendleton@apache.org F71-coar@apache.org
+1  3644  2104  ...                         0                   0
+2  3346  1938  ...                         0                   0
+3  3346  1938  ...                         0                   0
+
+[3 rows x 55 columns]
+;.;
+        F72       F25  ...  F71-bpendleton@apache.org  F71-coar@apache.org
+0  0.416807  0.597897  ...                        0.0                  0.0
+1  0.378101  0.550725  ...                        0.0                  0.0
+2  0.378101  0.550725  ...                        0.0                  0.0
+
+[3 rows x 55 columns]
+training_x: (2479, 55)
+training_y: 2479
+testset_x: (98, 55)
+testset_y: 98
+              precision    recall  f1-score   support
+
+           0       0.87      0.50      0.64        82
+           1       0.20      0.62      0.30        16
+
+    accuracy                           0.52        98
+   macro avg       0.53      0.56      0.47        98
+weighted avg       0.76      0.52      0.58        98
+
+accuracy: 0.5204081632653061
+0.29850746268656714
+@@@ tn: 41, fp: 41, fn: 6, tp: 10
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 30, actual label: 0, predicted: 0
+iter: 1, sample_no: 73, actual label: 0, predicted: 1
+iter: 2, sample_no: 87, actual label: 0, predicted: 0
+iter: 3, sample_no: 13, actual label: 0, predicted: 0
+iter: 4, sample_no: 6, actual label: 1, predicted: 1
+iter: 5, sample_no: 80, actual label: 0, predicted: 1
+iter: 6, sample_no: 58, actual label: 0, predicted: 1
+iter: 7, sample_no: 27, actual label: 0, predicted: 0
+iter: 8, sample_no: 79, actual label: 0, predicted: 1
+iter: 9, sample_no: 6, actual label: 1, predicted: 1
+iter: 10, sample_no: 67, actual label: 0, predicted: 1
+iter: 11, sample_no: 28, actual label: 0, predicted: 0
+iter: 12, sample_no: 86, actual label: 0, predicted: 0
+iter: 13, sample_no: 49, actual label: 0, predicted: 0
+iter: 14, sample_no: 3, actual label: 0, predicted: 1
+iter: 15, sample_no: 7, actual label: 1, predicted: 0
+iter: 16, sample_no: 10, actual label: 0, predicted: 0
+iter: 17, sample_no: 42, actual label: 0, predicted: 0
+iter: 18, sample_no: 25, actual label: 0, predicted: 0
+iter: 19, sample_no: 38, actual label: 0, predicted: 0
+iter: 20, sample_no: 29, actual label: 0, predicted: 0
+iter: 21, sample_no: 79, actual label: 0, predicted: 1
+iter: 22, sample_no: 48, actual label: 1, predicted: 0
+iter: 23, sample_no: 23, actual label: 0, predicted: 1
+iter: 24, sample_no: 29, actual label: 0, predicted: 0
+number of samples: 98
+AUC 0.59375
+pos_get 16
+total recall stop_at 1.0
+@@@ C - Repeat number: 4
+will not use leaked features
+@@@ D - common_header:  {'F3-NA', 'F71-kmarsden@apache.org', 'F71-djd@apache.org', 'F71-suresht@apache.org', 'F71-bernt@apache.org', 'F3-PrintStream', 'F71-rhillegas@apache.org', 'F71-bandaram@apache.org', 'F71-fuzzylogic@apache.org', 'F68', 'F3-TransactionController', 'F3-byte[]', 'F3-Integer', 'F71-myrnavl@apache.org', 'F65', 'F71-bakksjo@apache.org', 'F71-kahatlen@apache.org', 'F72', 'F3-String', 'F123', 'F3-InputStream', 'F3-boolean', 'F3-Long', 'F3-int', 'F3-ResultSet', 'F71-mamta@apache.org', 'F71-coar@apache.org', 'F41', 'F3-Connection', 'F101', 'F71-dyre@apache.org', 'F15-public', 'F15-private', 'F15-NA', 'F71-davidvc@apache.org', 'F71-kristwaa@apache.org', 'F71-dag@apache.org', 'F71-bpendleton@apache.org', 'F104', 'F71-lilywei@apache.org', 'F3-int[]', 'F77', 'F71-mikem@apache.org', 'category', 'F3-char', 'F3-null', 'F25', 'F3-PrintWriter', 'F3-long', 'F3-SQLException', 'F126', 'F15-protected', 'F71-oysteing@apache.org', 'F3-QualifiedIdentifier', 'F22', 'F105'}
+    F72   F25  ... F71-bpendleton@apache.org F71-coar@apache.org
+1  3644  2104  ...                         0                   0
+2  3346  1938  ...                         0                   0
+3  3346  1938  ...                         0                   0
+
+[3 rows x 55 columns]
+;.;
+        F72       F25  ...  F71-bpendleton@apache.org  F71-coar@apache.org
+0  0.416807  0.597897  ...                        0.0                  0.0
+1  0.378101  0.550725  ...                        0.0                  0.0
+2  0.378101  0.550725  ...                        0.0                  0.0
+
+[3 rows x 55 columns]
+training_x: (2479, 55)
+training_y: 2479
+testset_x: (98, 55)
+testset_y: 98
+              precision    recall  f1-score   support
+
+           0       0.87      0.50      0.64        82
+           1       0.20      0.62      0.30        16
+
+    accuracy                           0.52        98
+   macro avg       0.53      0.56      0.47        98
+weighted avg       0.76      0.52      0.58        98
+
+accuracy: 0.5204081632653061
+0.29850746268656714
+@@@ tn: 41, fp: 41, fn: 6, tp: 10
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 69, actual label: 0, predicted: 1
+iter: 1, sample_no: 93, actual label: 0, predicted: 0
+iter: 2, sample_no: 49, actual label: 0, predicted: 0
+iter: 3, sample_no: 34, actual label: 0, predicted: 0
+iter: 4, sample_no: 73, actual label: 0, predicted: 1
+iter: 5, sample_no: 74, actual label: 0, predicted: 1
+iter: 6, sample_no: 96, actual label: 0, predicted: 1
+iter: 7, sample_no: 57, actual label: 0, predicted: 1
+iter: 8, sample_no: 30, actual label: 0, predicted: 0
+iter: 9, sample_no: 10, actual label: 0, predicted: 0
+iter: 10, sample_no: 71, actual label: 0, predicted: 1
+iter: 11, sample_no: 79, actual label: 0, predicted: 1
+iter: 12, sample_no: 3, actual label: 0, predicted: 1
+iter: 13, sample_no: 27, actual label: 0, predicted: 0
+iter: 14, sample_no: 29, actual label: 0, predicted: 0
+iter: 15, sample_no: 50, actual label: 0, predicted: 1
+iter: 16, sample_no: 10, actual label: 0, predicted: 0
+iter: 17, sample_no: 47, actual label: 1, predicted: 1
+iter: 18, sample_no: 36, actual label: 0, predicted: 0
+iter: 19, sample_no: 97, actual label: 0, predicted: 1
+iter: 20, sample_no: 19, actual label: 0, predicted: 0
+iter: 21, sample_no: 13, actual label: 0, predicted: 0
+iter: 22, sample_no: 78, actual label: 0, predicted: 1
+iter: 23, sample_no: 67, actual label: 0, predicted: 1
+iter: 24, sample_no: 49, actual label: 0, predicted: 0
+number of samples: 98
+AUC 0.59375
+pos_get 16
+total recall stop_at 1.0
+@@@ C - Repeat number: 5
+will not use leaked features
+@@@ D - common_header:  {'F3-NA', 'F71-kmarsden@apache.org', 'F71-djd@apache.org', 'F71-suresht@apache.org', 'F71-bernt@apache.org', 'F3-PrintStream', 'F71-rhillegas@apache.org', 'F71-bandaram@apache.org', 'F71-fuzzylogic@apache.org', 'F68', 'F3-TransactionController', 'F3-byte[]', 'F3-Integer', 'F71-myrnavl@apache.org', 'F65', 'F71-bakksjo@apache.org', 'F71-kahatlen@apache.org', 'F72', 'F3-String', 'F123', 'F3-InputStream', 'F3-boolean', 'F3-Long', 'F3-int', 'F3-ResultSet', 'F71-mamta@apache.org', 'F71-coar@apache.org', 'F41', 'F3-Connection', 'F101', 'F71-dyre@apache.org', 'F15-public', 'F15-private', 'F15-NA', 'F71-davidvc@apache.org', 'F71-kristwaa@apache.org', 'F71-dag@apache.org', 'F71-bpendleton@apache.org', 'F104', 'F71-lilywei@apache.org', 'F3-int[]', 'F77', 'F71-mikem@apache.org', 'category', 'F3-char', 'F3-null', 'F25', 'F3-PrintWriter', 'F3-long', 'F3-SQLException', 'F126', 'F15-protected', 'F71-oysteing@apache.org', 'F3-QualifiedIdentifier', 'F22', 'F105'}
+    F72   F25  ... F71-bpendleton@apache.org F71-coar@apache.org
+1  3644  2104  ...                         0                   0
+2  3346  1938  ...                         0                   0
+3  3346  1938  ...                         0                   0
+
+[3 rows x 55 columns]
+;.;
+        F72       F25  ...  F71-bpendleton@apache.org  F71-coar@apache.org
+0  0.416807  0.597897  ...                        0.0                  0.0
+1  0.378101  0.550725  ...                        0.0                  0.0
+2  0.378101  0.550725  ...                        0.0                  0.0
+
+[3 rows x 55 columns]
+training_x: (2479, 55)
+training_y: 2479
+testset_x: (98, 55)
+testset_y: 98
+              precision    recall  f1-score   support
+
+           0       0.87      0.50      0.64        82
+           1       0.20      0.62      0.30        16
+
+    accuracy                           0.52        98
+   macro avg       0.53      0.56      0.47        98
+weighted avg       0.76      0.52      0.58        98
+
+accuracy: 0.5204081632653061
+0.29850746268656714
+@@@ tn: 41, fp: 41, fn: 6, tp: 10
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 6, actual label: 1, predicted: 1
+iter: 1, sample_no: 65, actual label: 0, predicted: 1
+iter: 2, sample_no: 76, actual label: 0, predicted: 1
+iter: 3, sample_no: 19, actual label: 0, predicted: 0
+iter: 4, sample_no: 46, actual label: 0, predicted: 0
+iter: 5, sample_no: 76, actual label: 0, predicted: 1
+iter: 6, sample_no: 51, actual label: 0, predicted: 1
+iter: 7, sample_no: 85, actual label: 0, predicted: 1
+iter: 8, sample_no: 81, actual label: 0, predicted: 1
+iter: 9, sample_no: 68, actual label: 0, predicted: 1
+iter: 10, sample_no: 37, actual label: 0, predicted: 0
+iter: 11, sample_no: 79, actual label: 0, predicted: 1
+iter: 12, sample_no: 88, actual label: 0, predicted: 0
+iter: 13, sample_no: 45, actual label: 1, predicted: 0
+iter: 14, sample_no: 70, actual label: 0, predicted: 1
+iter: 15, sample_no: 31, actual label: 0, predicted: 0
+iter: 16, sample_no: 28, actual label: 0, predicted: 0
+iter: 17, sample_no: 33, actual label: 0, predicted: 0
+iter: 18, sample_no: 61, actual label: 0, predicted: 1
+iter: 19, sample_no: 63, actual label: 0, predicted: 1
+iter: 20, sample_no: 44, actual label: 1, predicted: 1
+iter: 21, sample_no: 21, actual label: 0, predicted: 0
+iter: 22, sample_no: 59, actual label: 0, predicted: 1
+iter: 23, sample_no: 21, actual label: 0, predicted: 0
+iter: 24, sample_no: 69, actual label: 0, predicted: 1
+number of samples: 98
+AUC 0.59375
+pos_get 16
+total recall stop_at 1.0
+@@@ C - Repeat number: 6
+will not use leaked features
+@@@ D - common_header:  {'F3-NA', 'F71-kmarsden@apache.org', 'F71-djd@apache.org', 'F71-suresht@apache.org', 'F71-bernt@apache.org', 'F3-PrintStream', 'F71-rhillegas@apache.org', 'F71-bandaram@apache.org', 'F71-fuzzylogic@apache.org', 'F68', 'F3-TransactionController', 'F3-byte[]', 'F3-Integer', 'F71-myrnavl@apache.org', 'F65', 'F71-bakksjo@apache.org', 'F71-kahatlen@apache.org', 'F72', 'F3-String', 'F123', 'F3-InputStream', 'F3-boolean', 'F3-Long', 'F3-int', 'F3-ResultSet', 'F71-mamta@apache.org', 'F71-coar@apache.org', 'F41', 'F3-Connection', 'F101', 'F71-dyre@apache.org', 'F15-public', 'F15-private', 'F15-NA', 'F71-davidvc@apache.org', 'F71-kristwaa@apache.org', 'F71-dag@apache.org', 'F71-bpendleton@apache.org', 'F104', 'F71-lilywei@apache.org', 'F3-int[]', 'F77', 'F71-mikem@apache.org', 'category', 'F3-char', 'F3-null', 'F25', 'F3-PrintWriter', 'F3-long', 'F3-SQLException', 'F126', 'F15-protected', 'F71-oysteing@apache.org', 'F3-QualifiedIdentifier', 'F22', 'F105'}
+    F72   F25  ... F71-bpendleton@apache.org F71-coar@apache.org
+1  3644  2104  ...                         0                   0
+2  3346  1938  ...                         0                   0
+3  3346  1938  ...                         0                   0
+
+[3 rows x 55 columns]
+;.;
+        F72       F25  ...  F71-bpendleton@apache.org  F71-coar@apache.org
+0  0.416807  0.597897  ...                        0.0                  0.0
+1  0.378101  0.550725  ...                        0.0                  0.0
+2  0.378101  0.550725  ...                        0.0                  0.0
+
+[3 rows x 55 columns]
+training_x: (2479, 55)
+training_y: 2479
+testset_x: (98, 55)
+testset_y: 98
+              precision    recall  f1-score   support
+
+           0       0.87      0.50      0.64        82
+           1       0.20      0.62      0.30        16
+
+    accuracy                           0.52        98
+   macro avg       0.53      0.56      0.47        98
+weighted avg       0.76      0.52      0.58        98
+
+accuracy: 0.5204081632653061
+0.29850746268656714
+@@@ tn: 41, fp: 41, fn: 6, tp: 10
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 51, actual label: 0, predicted: 1
+iter: 1, sample_no: 64, actual label: 0, predicted: 1
+iter: 2, sample_no: 8, actual label: 1, predicted: 0
+iter: 3, sample_no: 6, actual label: 1, predicted: 1
+iter: 4, sample_no: 11, actual label: 0, predicted: 0
+iter: 5, sample_no: 54, actual label: 0, predicted: 1
+iter: 6, sample_no: 5, actual label: 1, predicted: 1
+iter: 7, sample_no: 74, actual label: 0, predicted: 1
+iter: 8, sample_no: 24, actual label: 0, predicted: 0
+iter: 9, sample_no: 23, actual label: 0, predicted: 1
+iter: 10, sample_no: 34, actual label: 0, predicted: 0
+iter: 11, sample_no: 56, actual label: 0, predicted: 1
+iter: 12, sample_no: 4, actual label: 0, predicted: 0
+iter: 13, sample_no: 49, actual label: 0, predicted: 0
+iter: 14, sample_no: 37, actual label: 0, predicted: 0
+iter: 15, sample_no: 74, actual label: 0, predicted: 1
+iter: 16, sample_no: 96, actual label: 0, predicted: 1
+iter: 17, sample_no: 88, actual label: 0, predicted: 0
+iter: 18, sample_no: 15, actual label: 0, predicted: 0
+iter: 19, sample_no: 3, actual label: 0, predicted: 1
+iter: 20, sample_no: 78, actual label: 0, predicted: 1
+iter: 21, sample_no: 90, actual label: 0, predicted: 1
+iter: 22, sample_no: 46, actual label: 0, predicted: 0
+iter: 23, sample_no: 17, actual label: 1, predicted: 1
+iter: 24, sample_no: 15, actual label: 0, predicted: 0
+number of samples: 98
+AUC 0.59375
+pos_get 16
+total recall stop_at 1.0
+@@@ C - Repeat number: 7
+will not use leaked features
+@@@ D - common_header:  {'F3-NA', 'F71-kmarsden@apache.org', 'F71-djd@apache.org', 'F71-suresht@apache.org', 'F71-bernt@apache.org', 'F3-PrintStream', 'F71-rhillegas@apache.org', 'F71-bandaram@apache.org', 'F71-fuzzylogic@apache.org', 'F68', 'F3-TransactionController', 'F3-byte[]', 'F3-Integer', 'F71-myrnavl@apache.org', 'F65', 'F71-bakksjo@apache.org', 'F71-kahatlen@apache.org', 'F72', 'F3-String', 'F123', 'F3-InputStream', 'F3-boolean', 'F3-Long', 'F3-int', 'F3-ResultSet', 'F71-mamta@apache.org', 'F71-coar@apache.org', 'F41', 'F3-Connection', 'F101', 'F71-dyre@apache.org', 'F15-public', 'F15-private', 'F15-NA', 'F71-davidvc@apache.org', 'F71-kristwaa@apache.org', 'F71-dag@apache.org', 'F71-bpendleton@apache.org', 'F104', 'F71-lilywei@apache.org', 'F3-int[]', 'F77', 'F71-mikem@apache.org', 'category', 'F3-char', 'F3-null', 'F25', 'F3-PrintWriter', 'F3-long', 'F3-SQLException', 'F126', 'F15-protected', 'F71-oysteing@apache.org', 'F3-QualifiedIdentifier', 'F22', 'F105'}
+    F72   F25  ... F71-bpendleton@apache.org F71-coar@apache.org
+1  3644  2104  ...                         0                   0
+2  3346  1938  ...                         0                   0
+3  3346  1938  ...                         0                   0
+
+[3 rows x 55 columns]
+;.;
+        F72       F25  ...  F71-bpendleton@apache.org  F71-coar@apache.org
+0  0.416807  0.597897  ...                        0.0                  0.0
+1  0.378101  0.550725  ...                        0.0                  0.0
+2  0.378101  0.550725  ...                        0.0                  0.0
+
+[3 rows x 55 columns]
+training_x: (2479, 55)
+training_y: 2479
+testset_x: (98, 55)
+testset_y: 98
+              precision    recall  f1-score   support
+
+           0       0.87      0.50      0.64        82
+           1       0.20      0.62      0.30        16
+
+    accuracy                           0.52        98
+   macro avg       0.53      0.56      0.47        98
+weighted avg       0.76      0.52      0.58        98
+
+accuracy: 0.5204081632653061
+0.29850746268656714
+@@@ tn: 41, fp: 41, fn: 6, tp: 10
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 45, actual label: 1, predicted: 0
+iter: 1, sample_no: 10, actual label: 0, predicted: 0
+iter: 2, sample_no: 77, actual label: 0, predicted: 1
+iter: 3, sample_no: 53, actual label: 0, predicted: 1
+iter: 4, sample_no: 64, actual label: 0, predicted: 1
+iter: 5, sample_no: 47, actual label: 1, predicted: 1
+iter: 6, sample_no: 44, actual label: 1, predicted: 1
+iter: 7, sample_no: 71, actual label: 0, predicted: 1
+iter: 8, sample_no: 33, actual label: 0, predicted: 0
+iter: 9, sample_no: 47, actual label: 1, predicted: 1
+iter: 10, sample_no: 48, actual label: 1, predicted: 0
+iter: 11, sample_no: 73, actual label: 0, predicted: 1
+iter: 12, sample_no: 35, actual label: 0, predicted: 0
+iter: 13, sample_no: 43, actual label: 1, predicted: 1
+iter: 14, sample_no: 96, actual label: 0, predicted: 1
+iter: 15, sample_no: 51, actual label: 0, predicted: 1
+iter: 16, sample_no: 92, actual label: 0, predicted: 0
+iter: 17, sample_no: 95, actual label: 0, predicted: 0
+iter: 18, sample_no: 15, actual label: 0, predicted: 0
+iter: 19, sample_no: 77, actual label: 0, predicted: 1
+iter: 20, sample_no: 62, actual label: 0, predicted: 1
+iter: 21, sample_no: 3, actual label: 0, predicted: 1
+iter: 22, sample_no: 34, actual label: 0, predicted: 0
+iter: 23, sample_no: 70, actual label: 0, predicted: 1
+iter: 24, sample_no: 23, actual label: 0, predicted: 1
+number of samples: 98
+AUC 0.59375
+pos_get 16
+total recall stop_at 1.0
+@@@ C - Repeat number: 8
+will not use leaked features
+@@@ D - common_header:  {'F3-NA', 'F71-kmarsden@apache.org', 'F71-djd@apache.org', 'F71-suresht@apache.org', 'F71-bernt@apache.org', 'F3-PrintStream', 'F71-rhillegas@apache.org', 'F71-bandaram@apache.org', 'F71-fuzzylogic@apache.org', 'F68', 'F3-TransactionController', 'F3-byte[]', 'F3-Integer', 'F71-myrnavl@apache.org', 'F65', 'F71-bakksjo@apache.org', 'F71-kahatlen@apache.org', 'F72', 'F3-String', 'F123', 'F3-InputStream', 'F3-boolean', 'F3-Long', 'F3-int', 'F3-ResultSet', 'F71-mamta@apache.org', 'F71-coar@apache.org', 'F41', 'F3-Connection', 'F101', 'F71-dyre@apache.org', 'F15-public', 'F15-private', 'F15-NA', 'F71-davidvc@apache.org', 'F71-kristwaa@apache.org', 'F71-dag@apache.org', 'F71-bpendleton@apache.org', 'F104', 'F71-lilywei@apache.org', 'F3-int[]', 'F77', 'F71-mikem@apache.org', 'category', 'F3-char', 'F3-null', 'F25', 'F3-PrintWriter', 'F3-long', 'F3-SQLException', 'F126', 'F15-protected', 'F71-oysteing@apache.org', 'F3-QualifiedIdentifier', 'F22', 'F105'}
+    F72   F25  ... F71-bpendleton@apache.org F71-coar@apache.org
+1  3644  2104  ...                         0                   0
+2  3346  1938  ...                         0                   0
+3  3346  1938  ...                         0                   0
+
+[3 rows x 55 columns]
+;.;
+        F72       F25  ...  F71-bpendleton@apache.org  F71-coar@apache.org
+0  0.416807  0.597897  ...                        0.0                  0.0
+1  0.378101  0.550725  ...                        0.0                  0.0
+2  0.378101  0.550725  ...                        0.0                  0.0
+
+[3 rows x 55 columns]
+training_x: (2479, 55)
+training_y: 2479
+testset_x: (98, 55)
+testset_y: 98
+              precision    recall  f1-score   support
+
+           0       0.87      0.50      0.64        82
+           1       0.20      0.62      0.30        16
+
+    accuracy                           0.52        98
+   macro avg       0.53      0.56      0.47        98
+weighted avg       0.76      0.52      0.58        98
+
+accuracy: 0.5204081632653061
+0.29850746268656714
+@@@ tn: 41, fp: 41, fn: 6, tp: 10
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 96, actual label: 0, predicted: 1
+iter: 1, sample_no: 79, actual label: 0, predicted: 1
+iter: 2, sample_no: 56, actual label: 0, predicted: 1
+iter: 3, sample_no: 75, actual label: 0, predicted: 1
+iter: 4, sample_no: 78, actual label: 0, predicted: 1
+iter: 5, sample_no: 94, actual label: 0, predicted: 0
+iter: 6, sample_no: 41, actual label: 0, predicted: 1
+iter: 7, sample_no: 70, actual label: 0, predicted: 1
+iter: 8, sample_no: 61, actual label: 0, predicted: 1
+iter: 9, sample_no: 5, actual label: 1, predicted: 1
+iter: 10, sample_no: 63, actual label: 0, predicted: 1
+iter: 11, sample_no: 94, actual label: 0, predicted: 0
+iter: 12, sample_no: 57, actual label: 0, predicted: 1
+iter: 13, sample_no: 92, actual label: 0, predicted: 0
+iter: 14, sample_no: 59, actual label: 0, predicted: 1
+iter: 15, sample_no: 1, actual label: 0, predicted: 0
+iter: 16, sample_no: 73, actual label: 0, predicted: 1
+iter: 17, sample_no: 35, actual label: 0, predicted: 0
+iter: 18, sample_no: 51, actual label: 0, predicted: 1
+iter: 19, sample_no: 4, actual label: 0, predicted: 0
+iter: 20, sample_no: 34, actual label: 0, predicted: 0
+iter: 21, sample_no: 78, actual label: 0, predicted: 1
+iter: 22, sample_no: 73, actual label: 0, predicted: 1
+iter: 23, sample_no: 93, actual label: 0, predicted: 0
+iter: 24, sample_no: 4, actual label: 0, predicted: 0
+number of samples: 98
+AUC 0.59375
+pos_get 16
+total recall stop_at 1.0
+@@@ C - Repeat number: 9
+will not use leaked features
+@@@ D - common_header:  {'F3-NA', 'F71-kmarsden@apache.org', 'F71-djd@apache.org', 'F71-suresht@apache.org', 'F71-bernt@apache.org', 'F3-PrintStream', 'F71-rhillegas@apache.org', 'F71-bandaram@apache.org', 'F71-fuzzylogic@apache.org', 'F68', 'F3-TransactionController', 'F3-byte[]', 'F3-Integer', 'F71-myrnavl@apache.org', 'F65', 'F71-bakksjo@apache.org', 'F71-kahatlen@apache.org', 'F72', 'F3-String', 'F123', 'F3-InputStream', 'F3-boolean', 'F3-Long', 'F3-int', 'F3-ResultSet', 'F71-mamta@apache.org', 'F71-coar@apache.org', 'F41', 'F3-Connection', 'F101', 'F71-dyre@apache.org', 'F15-public', 'F15-private', 'F15-NA', 'F71-davidvc@apache.org', 'F71-kristwaa@apache.org', 'F71-dag@apache.org', 'F71-bpendleton@apache.org', 'F104', 'F71-lilywei@apache.org', 'F3-int[]', 'F77', 'F71-mikem@apache.org', 'category', 'F3-char', 'F3-null', 'F25', 'F3-PrintWriter', 'F3-long', 'F3-SQLException', 'F126', 'F15-protected', 'F71-oysteing@apache.org', 'F3-QualifiedIdentifier', 'F22', 'F105'}
+    F72   F25  ... F71-bpendleton@apache.org F71-coar@apache.org
+1  3644  2104  ...                         0                   0
+2  3346  1938  ...                         0                   0
+3  3346  1938  ...                         0                   0
+
+[3 rows x 55 columns]
+;.;
+        F72       F25  ...  F71-bpendleton@apache.org  F71-coar@apache.org
+0  0.416807  0.597897  ...                        0.0                  0.0
+1  0.378101  0.550725  ...                        0.0                  0.0
+2  0.378101  0.550725  ...                        0.0                  0.0
+
+[3 rows x 55 columns]
+training_x: (2479, 55)
+training_y: 2479
+testset_x: (98, 55)
+testset_y: 98
+              precision    recall  f1-score   support
+
+           0       0.87      0.50      0.64        82
+           1       0.20      0.62      0.30        16
+
+    accuracy                           0.52        98
+   macro avg       0.53      0.56      0.47        98
+weighted avg       0.76      0.52      0.58        98
+
+accuracy: 0.5204081632653061
+0.29850746268656714
+@@@ tn: 41, fp: 41, fn: 6, tp: 10
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 57, actual label: 0, predicted: 1
+iter: 1, sample_no: 83, actual label: 1, predicted: 1
+iter: 2, sample_no: 89, actual label: 0, predicted: 0
+iter: 3, sample_no: 8, actual label: 1, predicted: 0
+iter: 4, sample_no: 44, actual label: 1, predicted: 1
+iter: 5, sample_no: 91, actual label: 1, predicted: 1
+iter: 6, sample_no: 43, actual label: 1, predicted: 1
+iter: 7, sample_no: 74, actual label: 0, predicted: 1
+iter: 8, sample_no: 36, actual label: 0, predicted: 0
+iter: 9, sample_no: 75, actual label: 0, predicted: 1
+iter: 10, sample_no: 70, actual label: 0, predicted: 1
+iter: 11, sample_no: 95, actual label: 0, predicted: 0
+iter: 12, sample_no: 25, actual label: 0, predicted: 0
+iter: 13, sample_no: 78, actual label: 0, predicted: 1
+iter: 14, sample_no: 74, actual label: 0, predicted: 1
+iter: 15, sample_no: 26, actual label: 0, predicted: 0
+iter: 16, sample_no: 9, actual label: 0, predicted: 0
+iter: 17, sample_no: 72, actual label: 0, predicted: 1
+iter: 18, sample_no: 6, actual label: 1, predicted: 1
+iter: 19, sample_no: 44, actual label: 1, predicted: 1
+iter: 20, sample_no: 6, actual label: 1, predicted: 1
+iter: 21, sample_no: 20, actual label: 0, predicted: 0
+iter: 22, sample_no: 25, actual label: 0, predicted: 0
+iter: 23, sample_no: 70, actual label: 0, predicted: 1
+iter: 24, sample_no: 84, actual label: 0, predicted: 1
+number of samples: 98
+AUC 0.59375
+pos_get 16
+total recall stop_at 1.0
+@@@ C - Repeat number: 10
+will not use leaked features
+@@@ D - common_header:  {'F3-NA', 'F71-kmarsden@apache.org', 'F71-djd@apache.org', 'F71-suresht@apache.org', 'F71-bernt@apache.org', 'F3-PrintStream', 'F71-rhillegas@apache.org', 'F71-bandaram@apache.org', 'F71-fuzzylogic@apache.org', 'F68', 'F3-TransactionController', 'F3-byte[]', 'F3-Integer', 'F71-myrnavl@apache.org', 'F65', 'F71-bakksjo@apache.org', 'F71-kahatlen@apache.org', 'F72', 'F3-String', 'F123', 'F3-InputStream', 'F3-boolean', 'F3-Long', 'F3-int', 'F3-ResultSet', 'F71-mamta@apache.org', 'F71-coar@apache.org', 'F41', 'F3-Connection', 'F101', 'F71-dyre@apache.org', 'F15-public', 'F15-private', 'F15-NA', 'F71-davidvc@apache.org', 'F71-kristwaa@apache.org', 'F71-dag@apache.org', 'F71-bpendleton@apache.org', 'F104', 'F71-lilywei@apache.org', 'F3-int[]', 'F77', 'F71-mikem@apache.org', 'category', 'F3-char', 'F3-null', 'F25', 'F3-PrintWriter', 'F3-long', 'F3-SQLException', 'F126', 'F15-protected', 'F71-oysteing@apache.org', 'F3-QualifiedIdentifier', 'F22', 'F105'}
+    F72   F25  ... F71-bpendleton@apache.org F71-coar@apache.org
+1  3644  2104  ...                         0                   0
+2  3346  1938  ...                         0                   0
+3  3346  1938  ...                         0                   0
+
+[3 rows x 55 columns]
+;.;
+        F72       F25  ...  F71-bpendleton@apache.org  F71-coar@apache.org
+0  0.416807  0.597897  ...                        0.0                  0.0
+1  0.378101  0.550725  ...                        0.0                  0.0
+2  0.378101  0.550725  ...                        0.0                  0.0
+
+[3 rows x 55 columns]
+training_x: (2479, 55)
+training_y: 2479
+testset_x: (98, 55)
+testset_y: 98
+              precision    recall  f1-score   support
+
+           0       0.87      0.50      0.64        82
+           1       0.20      0.62      0.30        16
+
+    accuracy                           0.52        98
+   macro avg       0.53      0.56      0.47        98
+weighted avg       0.76      0.52      0.58        98
+
+accuracy: 0.5204081632653061
+0.29850746268656714
+@@@ tn: 41, fp: 41, fn: 6, tp: 10
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 28, actual label: 0, predicted: 0
+iter: 1, sample_no: 64, actual label: 0, predicted: 1
+iter: 2, sample_no: 36, actual label: 0, predicted: 0
+iter: 3, sample_no: 61, actual label: 0, predicted: 1
+iter: 4, sample_no: 9, actual label: 0, predicted: 0
+iter: 5, sample_no: 46, actual label: 0, predicted: 0
+iter: 6, sample_no: 13, actual label: 0, predicted: 0
+iter: 7, sample_no: 9, actual label: 0, predicted: 0
+iter: 8, sample_no: 0, actual label: 1, predicted: 1
+iter: 9, sample_no: 45, actual label: 1, predicted: 0
+iter: 10, sample_no: 0, actual label: 1, predicted: 1
+iter: 11, sample_no: 43, actual label: 1, predicted: 1
+iter: 12, sample_no: 6, actual label: 1, predicted: 1
+iter: 13, sample_no: 10, actual label: 0, predicted: 0
+iter: 14, sample_no: 20, actual label: 0, predicted: 0
+iter: 15, sample_no: 75, actual label: 0, predicted: 1
+iter: 16, sample_no: 62, actual label: 0, predicted: 1
+iter: 17, sample_no: 39, actual label: 0, predicted: 0
+iter: 18, sample_no: 44, actual label: 1, predicted: 1
+iter: 19, sample_no: 89, actual label: 0, predicted: 0
+iter: 20, sample_no: 65, actual label: 0, predicted: 1
+iter: 21, sample_no: 48, actual label: 1, predicted: 0
+iter: 22, sample_no: 28, actual label: 0, predicted: 0
+iter: 23, sample_no: 74, actual label: 0, predicted: 1
+iter: 24, sample_no: 80, actual label: 0, predicted: 1
+number of samples: 98
+AUC 0.5929878048780488
+pos_get 16
+total recall stop_at 1.0
+----------threshold stop at----------: 1
+AUC [0.59375, 0.5929878048780488, 0.59375, 0.59375, 0.59375, 0.59375, 0.59375, 0.59375, 0.59375, 0.5929878048780488]
+AUC_median 0.59375
+AUC_iqr 0.0
+cost [0.9285714285714286, 0.9285714285714286, 0.9285714285714286, 0.9285714285714286, 0.9285714285714286, 0.9285714285714286, 0.9285714285714286, 0.9285714285714286, 0.9285714285714286, 0.9285714285714286]
+COST_med 0.9285714285714286
+COST_iqr 0.0
+f1_pos_list [np.float64(0.29850746268656714), np.float64(0.29850746268656714), np.float64(0.29850746268656714), np.float64(0.29850746268656714), np.float64(0.29850746268656714), np.float64(0.29850746268656714), np.float64(0.29850746268656714), np.float64(0.29850746268656714), np.float64(0.29850746268656714), np.float64(0.29850746268656714)]
+f1_pos_med 0.29850746268656714
+total_tn 410
+total_fp 410
+total_fn 60
+total_tp 100
+p= 0.19607843137254902
+r= 0.625
+f= 0.29850746268656714

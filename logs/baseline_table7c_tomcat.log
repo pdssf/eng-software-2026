@@ -1,0 +1,27 @@
+@@@ A - classifier: SVC(class_weight='balanced', kernel='linear', probability=True)
+@@@ B - threshold stop at: 1
+@@@ C - Repeat number: 1
+@@@ D - common_header:  {'F120', 'category', 'F15-private', 'F71-costin@apache.org', 'F3-null', 'F3-Class<?>[]', 'F3-Long', 'F71-pero@apache.org', 'F68', 'F72', 'F117', 'F3-Object', 'F71-timw@apache.org', 'F65', 'F3-Object[]', 'F3-Class[]', 'F110', 'F77', 'F3-String', 'F3-InputStream', 'F3-boolean', 'F71-jfclere@apache.org', 'F116', 'F105', 'F25', 'F104', 'F3-int', 'F3-FileInputStream', 'F71-remm@apache.org', 'F71-jhook@apache.org', 'F71-kfujino@apache.org', 'F71-yoavs@apache.org', 'F71-rjung@apache.org', 'F71-fhanik@apache.org', 'F15-public', 'F3-NA', 'F71-fcarrion@apache.org', 'F3-String[]', 'F3-Member', 'F71-slaurent@apache.org', 'F71-mturk@apache.org', 'F3-long', 'F71-markt@apache.org', 'F71-idarwin@apache.org', 'F101', 'F3-ELContext', 'F15-protected', 'F115', 'F3-Integer', 'F3-byte[]', 'F71-kkolinko@apache.org', 'F41', 'F71-schultz@apache.org', 'F126', 'F3-Session', 'F71-funkman@apache.org', 'F123', 'F15-NA', 'F3-ObjectName', 'F22', 'F71-billbarker@apache.org'}
+Traceback (most recent call last):
+  File "/home/leona/Masters/ES/SA_retrospective/src/baseline.py", line 217, in <module>
+    rate, auc, f1_pos, tn, fp, fn, tp = main(path, stop_at=stopat_id,
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leona/Masters/ES/SA_retrospective/src/baseline.py", line 43, in main
+    training_x, training_y, testset_x, testset_y, training_canonical_ids, testing_canonical_ids = cleaning.data_clean(path, [interesting_path], seed)
+                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leona/Masters/ES/SA_retrospective/src/cleaning.py", line 340, in data_clean
+    testset_y = testing_trim.iloc[:, -1]
+                ~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/leona/Masters/ES/SA_retrospective/venv/lib/python3.12/site-packages/pandas/core/indexing.py", line 1200, in __getitem__
+    return self._getitem_tuple(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leona/Masters/ES/SA_retrospective/venv/lib/python3.12/site-packages/pandas/core/indexing.py", line 1711, in _getitem_tuple
+    tup = self._validate_tuple_indexer(tup)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leona/Masters/ES/SA_retrospective/venv/lib/python3.12/site-packages/pandas/core/indexing.py", line 993, in _validate_tuple_indexer
+    self._validate_key(k, i)
+  File "/home/leona/Masters/ES/SA_retrospective/venv/lib/python3.12/site-packages/pandas/core/indexing.py", line 1605, in _validate_key
+    self._validate_integer(key, axis)
+  File "/home/leona/Masters/ES/SA_retrospective/venv/lib/python3.12/site-packages/pandas/core/indexing.py", line 1706, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
