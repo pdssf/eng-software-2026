@@ -1,0 +1,38 @@
+@@@ A - classifier: DummyClassifier(constant=1, strategy='constant')
+@@@ B - threshold stop at: 1
+@@@ C - Repeat number: 1
+@@@ D - common_header:  {'F3-InputStream', 'F71-mkleint@apache.org', 'F71-bentmann@apache.org', 'F71-hboutemy@apache.org', 'F65', 'F117', 'F3-request.getLocalRepository()', 'F104', 'F72', 'F71-brett@apache.org', 'F71-carlos@apache.org', 'F3-String', 'F3-null', 'F120', 'F105', 'F71-olamy@apache.org', 'F3-XmlPullParser', 'F3-int', 'F77', 'F115', 'F41', 'F25', 'F71-brianf@apache.org', 'F126', 'F123', 'F116', 'F71-jvanzyl@apache.org', 'F3-Artifact', 'F71-ogusakov@apache.org', 'F3-ProjectSegment', 'F15-public', 'F71-sisbell@apache.org', 'F3-File', 'F71-jdcasey@apache.org', 'F15-NA', 'F3-ArrayList<Artifact>', 'F15-private', 'F71-kenney@apache.org', 'F71-krosenvold@apache.org', 'F3-NA', 'F68', 'category', 'F71-ifedorenko@apache.org', 'F110', 'F101', 'F22'}
+Empty DataFrame
+Columns: [F72, F25, F65, F68, F101, F104, F105, F3-NA, F3-ArrayList<Artifact>, F3-File, F3-InputStream, F3-request.getLocalRepository(), F3-null, F3-ProjectSegment, F3-XmlPullParser, F3-String, F3-int, F3-Artifact, F15-NA, F15-private, F15-public, F22, F116, F117, F120, F110, F123, F115, F77, F41, F126, F71-ogusakov@apache.org, F71-brett@apache.org, F71-hboutemy@apache.org, F71-kenney@apache.org, F71-sisbell@apache.org, F71-mkleint@apache.org, F71-carlos@apache.org, F71-olamy@apache.org, F71-jvanzyl@apache.org, F71-brianf@apache.org, F71-ifedorenko@apache.org, F71-bentmann@apache.org, F71-krosenvold@apache.org, F71-jdcasey@apache.org]
+Index: []
+Traceback (most recent call last):
+  File "/home/leona/Masters/ES/SA_retrospective/src/baseline.py", line 217, in <module>
+    rate, auc, f1_pos, tn, fp, fn, tp = main(path, stop_at=stopat_id,
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leona/Masters/ES/SA_retrospective/src/baseline.py", line 43, in main
+    training_x, training_y, testset_x, testset_y, training_canonical_ids, testing_canonical_ids = cleaning.data_clean(path, [interesting_path], seed)
+                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leona/Masters/ES/SA_retrospective/src/cleaning.py", line 356, in data_clean
+    training_x = pd.DataFrame(scaler.fit_transform(training_x), columns = training_x.columns)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leona/Masters/ES/SA_retrospective/venv/lib/python3.12/site-packages/sklearn/utils/_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leona/Masters/ES/SA_retrospective/venv/lib/python3.12/site-packages/sklearn/base.py", line 907, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leona/Masters/ES/SA_retrospective/venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py", line 471, in fit
+    return self.partial_fit(X, y)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leona/Masters/ES/SA_retrospective/venv/lib/python3.12/site-packages/sklearn/base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leona/Masters/ES/SA_retrospective/venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py", line 511, in partial_fit
+    X = validate_data(
+        ^^^^^^^^^^^^^^
+  File "/home/leona/Masters/ES/SA_retrospective/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2902, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leona/Masters/ES/SA_retrospective/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1097, in check_array
+    raise ValueError(
+ValueError: Found array with 0 sample(s) (shape=(0, 45)) while a minimum of 1 is required by MinMaxScaler.

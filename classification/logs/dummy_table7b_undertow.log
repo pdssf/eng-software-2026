@@ -1,0 +1,638 @@
+@@@ A - classifier: DummyClassifier(constant=1, strategy='constant')
+@@@ B - threshold stop at: 1
+@@@ C - Repeat number: 1
+@@@ D - common_header:  {'F71-darran.lofthouse@jboss.com', 'F3-HttpServerExchange', 'F101', 'F22', 'F3-ConnectedSslStreamChannel', 'F3-int', 'F120', 'F123', 'F71-tomaz.cerar@gmail.com', 'F3-NA', 'F68', 'F3-ioFuture.getException()', 'F71-karm@redhat.com', 'F71-david.lloyd@redhat.com', 'F3-null', 'F71-radosoft@gmail.com', 'F15-NA', 'F117', 'F115', 'F3-ClassLoader', 'F71-jason.greene@redhat.com', 'F3-ClientConnection', 'F15-private', 'F71-proyal@drw.com', 'F71-emuckenh@redhat.com', 'F71-ivan.vonnagy@ensighten.com', 'F25', 'category', 'F105', 'F110', 'F71-andrej.golovnin@googlemail.com', 'F71-stuart.w.douglas@gmail.com', 'F116', 'F3-Map<String String>', 'F41', 'F15-protected', 'F104', 'F3-this.exchange.getRequestScheme()', 'F3-Class', 'F72', 'F126', 'F3-StreamConnection', 'F77', 'F71-lponce@redhat.com', 'F71-adamforgacs256@gmail.com', 'F71-jharting@redhat.com', 'F71-rosolkodv@gmail.com', 'F71-andrei.petrovici@gmail.com', 'F15-public', 'F3-String', 'F71-nmaurer@redhat.com', 'F71-greg.hellings@gmail.com', 'F65'}
+    F72  F25  ... F71-andrei.petrovici@gmail.com F71-david.lloyd@redhat.com
+1  3831  920  ...                              0                          0
+2  1423    0  ...                              0                          0
+3  1423    0  ...                              0                          0
+
+[3 rows x 52 columns]
+;.;
+        F72  ...  F71-david.lloyd@redhat.com
+0  0.792366  ...                         0.0
+1  0.000000  ...                         0.0
+2  0.000000  ...                         0.0
+
+[3 rows x 52 columns]
+training_x: (411, 52)
+training_y: 411
+testset_x: (53, 52)
+testset_y: 53
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        48
+           1       0.09      1.00      0.17         5
+
+    accuracy                           0.09        53
+   macro avg       0.05      0.50      0.09        53
+weighted avg       0.01      0.09      0.02        53
+
+accuracy: 0.09433962264150944
+0.1724137931034483
+@@@ tn: 0, fp: 48, fn: 0, tp: 5
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 4, actual label: 0, predicted: 1
+iter: 1, sample_no: 20, actual label: 0, predicted: 1
+iter: 2, sample_no: 12, actual label: 0, predicted: 1
+iter: 3, sample_no: 44, actual label: 0, predicted: 1
+iter: 4, sample_no: 7, actual label: 0, predicted: 1
+iter: 5, sample_no: 13, actual label: 0, predicted: 1
+iter: 6, sample_no: 28, actual label: 0, predicted: 1
+iter: 7, sample_no: 51, actual label: 0, predicted: 1
+iter: 8, sample_no: 16, actual label: 0, predicted: 1
+iter: 9, sample_no: 33, actual label: 1, predicted: 1
+iter: 10, sample_no: 47, actual label: 0, predicted: 1
+iter: 11, sample_no: 31, actual label: 0, predicted: 1
+iter: 12, sample_no: 2, actual label: 1, predicted: 1
+iter: 13, sample_no: 19, actual label: 0, predicted: 1
+iter: 14, sample_no: 31, actual label: 0, predicted: 1
+iter: 15, sample_no: 34, actual label: 0, predicted: 1
+iter: 16, sample_no: 28, actual label: 0, predicted: 1
+iter: 17, sample_no: 15, actual label: 0, predicted: 1
+iter: 18, sample_no: 26, actual label: 1, predicted: 1
+iter: 19, sample_no: 22, actual label: 0, predicted: 1
+iter: 20, sample_no: 50, actual label: 0, predicted: 1
+iter: 21, sample_no: 4, actual label: 0, predicted: 1
+iter: 22, sample_no: 1, actual label: 0, predicted: 1
+iter: 23, sample_no: 29, actual label: 0, predicted: 1
+iter: 24, sample_no: 20, actual label: 0, predicted: 1
+number of samples: 53
+AUC 0.5
+pos_get 5
+total recall stop_at 1.0
+@@@ C - Repeat number: 2
+@@@ D - common_header:  {'F71-darran.lofthouse@jboss.com', 'F3-HttpServerExchange', 'F101', 'F22', 'F3-ConnectedSslStreamChannel', 'F3-int', 'F120', 'F123', 'F71-tomaz.cerar@gmail.com', 'F3-NA', 'F68', 'F3-ioFuture.getException()', 'F71-karm@redhat.com', 'F71-david.lloyd@redhat.com', 'F3-null', 'F71-radosoft@gmail.com', 'F15-NA', 'F117', 'F115', 'F3-ClassLoader', 'F71-jason.greene@redhat.com', 'F3-ClientConnection', 'F15-private', 'F71-proyal@drw.com', 'F71-emuckenh@redhat.com', 'F71-ivan.vonnagy@ensighten.com', 'F25', 'category', 'F105', 'F110', 'F71-andrej.golovnin@googlemail.com', 'F71-stuart.w.douglas@gmail.com', 'F116', 'F3-Map<String String>', 'F41', 'F15-protected', 'F104', 'F3-this.exchange.getRequestScheme()', 'F3-Class', 'F72', 'F126', 'F3-StreamConnection', 'F77', 'F71-lponce@redhat.com', 'F71-adamforgacs256@gmail.com', 'F71-jharting@redhat.com', 'F71-rosolkodv@gmail.com', 'F71-andrei.petrovici@gmail.com', 'F15-public', 'F3-String', 'F71-nmaurer@redhat.com', 'F71-greg.hellings@gmail.com', 'F65'}
+    F72  F25  ... F71-andrei.petrovici@gmail.com F71-david.lloyd@redhat.com
+1  3831  920  ...                              0                          0
+2  1423    0  ...                              0                          0
+3  1423    0  ...                              0                          0
+
+[3 rows x 52 columns]
+;.;
+        F72  ...  F71-david.lloyd@redhat.com
+0  0.792366  ...                         0.0
+1  0.000000  ...                         0.0
+2  0.000000  ...                         0.0
+
+[3 rows x 52 columns]
+training_x: (411, 52)
+training_y: 411
+testset_x: (53, 52)
+testset_y: 53
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        48
+           1       0.09      1.00      0.17         5
+
+    accuracy                           0.09        53
+   macro avg       0.05      0.50      0.09        53
+weighted avg       0.01      0.09      0.02        53
+
+accuracy: 0.09433962264150944
+0.1724137931034483
+@@@ tn: 0, fp: 48, fn: 0, tp: 5
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 20, actual label: 0, predicted: 1
+iter: 1, sample_no: 40, actual label: 0, predicted: 1
+iter: 2, sample_no: 28, actual label: 0, predicted: 1
+iter: 3, sample_no: 37, actual label: 0, predicted: 1
+iter: 4, sample_no: 29, actual label: 0, predicted: 1
+iter: 5, sample_no: 50, actual label: 0, predicted: 1
+iter: 6, sample_no: 11, actual label: 0, predicted: 1
+iter: 7, sample_no: 22, actual label: 0, predicted: 1
+iter: 8, sample_no: 11, actual label: 0, predicted: 1
+iter: 9, sample_no: 36, actual label: 0, predicted: 1
+iter: 10, sample_no: 43, actual label: 0, predicted: 1
+iter: 11, sample_no: 49, actual label: 0, predicted: 1
+iter: 12, sample_no: 27, actual label: 1, predicted: 1
+iter: 13, sample_no: 10, actual label: 0, predicted: 1
+iter: 14, sample_no: 47, actual label: 0, predicted: 1
+iter: 15, sample_no: 10, actual label: 0, predicted: 1
+iter: 16, sample_no: 8, actual label: 0, predicted: 1
+iter: 17, sample_no: 31, actual label: 0, predicted: 1
+iter: 18, sample_no: 40, actual label: 0, predicted: 1
+iter: 19, sample_no: 39, actual label: 0, predicted: 1
+iter: 20, sample_no: 26, actual label: 1, predicted: 1
+iter: 21, sample_no: 10, actual label: 0, predicted: 1
+iter: 22, sample_no: 35, actual label: 0, predicted: 1
+iter: 23, sample_no: 13, actual label: 0, predicted: 1
+iter: 24, sample_no: 30, actual label: 0, predicted: 1
+number of samples: 53
+AUC 0.5
+pos_get 5
+total recall stop_at 1.0
+@@@ C - Repeat number: 3
+@@@ D - common_header:  {'F71-darran.lofthouse@jboss.com', 'F3-HttpServerExchange', 'F101', 'F22', 'F3-ConnectedSslStreamChannel', 'F3-int', 'F120', 'F123', 'F71-tomaz.cerar@gmail.com', 'F3-NA', 'F68', 'F3-ioFuture.getException()', 'F71-karm@redhat.com', 'F71-david.lloyd@redhat.com', 'F3-null', 'F71-radosoft@gmail.com', 'F15-NA', 'F117', 'F115', 'F3-ClassLoader', 'F71-jason.greene@redhat.com', 'F3-ClientConnection', 'F15-private', 'F71-proyal@drw.com', 'F71-emuckenh@redhat.com', 'F71-ivan.vonnagy@ensighten.com', 'F25', 'category', 'F105', 'F110', 'F71-andrej.golovnin@googlemail.com', 'F71-stuart.w.douglas@gmail.com', 'F116', 'F3-Map<String String>', 'F41', 'F15-protected', 'F104', 'F3-this.exchange.getRequestScheme()', 'F3-Class', 'F72', 'F126', 'F3-StreamConnection', 'F77', 'F71-lponce@redhat.com', 'F71-adamforgacs256@gmail.com', 'F71-jharting@redhat.com', 'F71-rosolkodv@gmail.com', 'F71-andrei.petrovici@gmail.com', 'F15-public', 'F3-String', 'F71-nmaurer@redhat.com', 'F71-greg.hellings@gmail.com', 'F65'}
+    F72  F25  ... F71-andrei.petrovici@gmail.com F71-david.lloyd@redhat.com
+1  3831  920  ...                              0                          0
+2  1423    0  ...                              0                          0
+3  1423    0  ...                              0                          0
+
+[3 rows x 52 columns]
+;.;
+        F72  ...  F71-david.lloyd@redhat.com
+0  0.792366  ...                         0.0
+1  0.000000  ...                         0.0
+2  0.000000  ...                         0.0
+
+[3 rows x 52 columns]
+training_x: (411, 52)
+training_y: 411
+testset_x: (53, 52)
+testset_y: 53
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        48
+           1       0.09      1.00      0.17         5
+
+    accuracy                           0.09        53
+   macro avg       0.05      0.50      0.09        53
+weighted avg       0.01      0.09      0.02        53
+
+accuracy: 0.09433962264150944
+0.1724137931034483
+@@@ tn: 0, fp: 48, fn: 0, tp: 5
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 11, actual label: 0, predicted: 1
+iter: 1, sample_no: 40, actual label: 0, predicted: 1
+iter: 2, sample_no: 32, actual label: 0, predicted: 1
+iter: 3, sample_no: 10, actual label: 0, predicted: 1
+iter: 4, sample_no: 6, actual label: 0, predicted: 1
+iter: 5, sample_no: 26, actual label: 1, predicted: 1
+iter: 6, sample_no: 24, actual label: 0, predicted: 1
+iter: 7, sample_no: 7, actual label: 0, predicted: 1
+iter: 8, sample_no: 3, actual label: 0, predicted: 1
+iter: 9, sample_no: 11, actual label: 0, predicted: 1
+iter: 10, sample_no: 24, actual label: 0, predicted: 1
+iter: 11, sample_no: 44, actual label: 0, predicted: 1
+iter: 12, sample_no: 50, actual label: 0, predicted: 1
+iter: 13, sample_no: 8, actual label: 0, predicted: 1
+iter: 14, sample_no: 9, actual label: 0, predicted: 1
+iter: 15, sample_no: 20, actual label: 0, predicted: 1
+iter: 16, sample_no: 14, actual label: 0, predicted: 1
+iter: 17, sample_no: 52, actual label: 0, predicted: 1
+iter: 18, sample_no: 50, actual label: 0, predicted: 1
+iter: 19, sample_no: 36, actual label: 0, predicted: 1
+iter: 20, sample_no: 52, actual label: 0, predicted: 1
+iter: 21, sample_no: 25, actual label: 0, predicted: 1
+iter: 22, sample_no: 38, actual label: 0, predicted: 1
+iter: 23, sample_no: 50, actual label: 0, predicted: 1
+iter: 24, sample_no: 7, actual label: 0, predicted: 1
+number of samples: 53
+AUC 0.5
+pos_get 5
+total recall stop_at 1.0
+@@@ C - Repeat number: 4
+@@@ D - common_header:  {'F71-darran.lofthouse@jboss.com', 'F3-HttpServerExchange', 'F101', 'F22', 'F3-ConnectedSslStreamChannel', 'F3-int', 'F120', 'F123', 'F71-tomaz.cerar@gmail.com', 'F3-NA', 'F68', 'F3-ioFuture.getException()', 'F71-karm@redhat.com', 'F71-david.lloyd@redhat.com', 'F3-null', 'F71-radosoft@gmail.com', 'F15-NA', 'F117', 'F115', 'F3-ClassLoader', 'F71-jason.greene@redhat.com', 'F3-ClientConnection', 'F15-private', 'F71-proyal@drw.com', 'F71-emuckenh@redhat.com', 'F71-ivan.vonnagy@ensighten.com', 'F25', 'category', 'F105', 'F110', 'F71-andrej.golovnin@googlemail.com', 'F71-stuart.w.douglas@gmail.com', 'F116', 'F3-Map<String String>', 'F41', 'F15-protected', 'F104', 'F3-this.exchange.getRequestScheme()', 'F3-Class', 'F72', 'F126', 'F3-StreamConnection', 'F77', 'F71-lponce@redhat.com', 'F71-adamforgacs256@gmail.com', 'F71-jharting@redhat.com', 'F71-rosolkodv@gmail.com', 'F71-andrei.petrovici@gmail.com', 'F15-public', 'F3-String', 'F71-nmaurer@redhat.com', 'F71-greg.hellings@gmail.com', 'F65'}
+    F72  F25  ... F71-andrei.petrovici@gmail.com F71-david.lloyd@redhat.com
+1  3831  920  ...                              0                          0
+2  1423    0  ...                              0                          0
+3  1423    0  ...                              0                          0
+
+[3 rows x 52 columns]
+;.;
+        F72  ...  F71-david.lloyd@redhat.com
+0  0.792366  ...                         0.0
+1  0.000000  ...                         0.0
+2  0.000000  ...                         0.0
+
+[3 rows x 52 columns]
+training_x: (411, 52)
+training_y: 411
+testset_x: (53, 52)
+testset_y: 53
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        48
+           1       0.09      1.00      0.17         5
+
+    accuracy                           0.09        53
+   macro avg       0.05      0.50      0.09        53
+weighted avg       0.01      0.09      0.02        53
+
+accuracy: 0.09433962264150944
+0.1724137931034483
+@@@ tn: 0, fp: 48, fn: 0, tp: 5
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 5, actual label: 0, predicted: 1
+iter: 1, sample_no: 44, actual label: 0, predicted: 1
+iter: 2, sample_no: 13, actual label: 0, predicted: 1
+iter: 3, sample_no: 3, actual label: 0, predicted: 1
+iter: 4, sample_no: 20, actual label: 0, predicted: 1
+iter: 5, sample_no: 28, actual label: 0, predicted: 1
+iter: 6, sample_no: 0, actual label: 0, predicted: 1
+iter: 7, sample_no: 1, actual label: 0, predicted: 1
+iter: 8, sample_no: 5, actual label: 0, predicted: 1
+iter: 9, sample_no: 32, actual label: 0, predicted: 1
+iter: 10, sample_no: 36, actual label: 0, predicted: 1
+iter: 11, sample_no: 35, actual label: 0, predicted: 1
+iter: 12, sample_no: 18, actual label: 0, predicted: 1
+iter: 13, sample_no: 36, actual label: 0, predicted: 1
+iter: 14, sample_no: 27, actual label: 1, predicted: 1
+iter: 15, sample_no: 13, actual label: 0, predicted: 1
+iter: 16, sample_no: 8, actual label: 0, predicted: 1
+iter: 17, sample_no: 12, actual label: 0, predicted: 1
+iter: 18, sample_no: 34, actual label: 0, predicted: 1
+iter: 19, sample_no: 31, actual label: 0, predicted: 1
+iter: 20, sample_no: 34, actual label: 0, predicted: 1
+iter: 21, sample_no: 10, actual label: 0, predicted: 1
+iter: 22, sample_no: 32, actual label: 0, predicted: 1
+iter: 23, sample_no: 52, actual label: 0, predicted: 1
+iter: 24, sample_no: 5, actual label: 0, predicted: 1
+number of samples: 53
+AUC 0.5
+pos_get 5
+total recall stop_at 1.0
+@@@ C - Repeat number: 5
+@@@ D - common_header:  {'F71-darran.lofthouse@jboss.com', 'F3-HttpServerExchange', 'F101', 'F22', 'F3-ConnectedSslStreamChannel', 'F3-int', 'F120', 'F123', 'F71-tomaz.cerar@gmail.com', 'F3-NA', 'F68', 'F3-ioFuture.getException()', 'F71-karm@redhat.com', 'F71-david.lloyd@redhat.com', 'F3-null', 'F71-radosoft@gmail.com', 'F15-NA', 'F117', 'F115', 'F3-ClassLoader', 'F71-jason.greene@redhat.com', 'F3-ClientConnection', 'F15-private', 'F71-proyal@drw.com', 'F71-emuckenh@redhat.com', 'F71-ivan.vonnagy@ensighten.com', 'F25', 'category', 'F105', 'F110', 'F71-andrej.golovnin@googlemail.com', 'F71-stuart.w.douglas@gmail.com', 'F116', 'F3-Map<String String>', 'F41', 'F15-protected', 'F104', 'F3-this.exchange.getRequestScheme()', 'F3-Class', 'F72', 'F126', 'F3-StreamConnection', 'F77', 'F71-lponce@redhat.com', 'F71-adamforgacs256@gmail.com', 'F71-jharting@redhat.com', 'F71-rosolkodv@gmail.com', 'F71-andrei.petrovici@gmail.com', 'F15-public', 'F3-String', 'F71-nmaurer@redhat.com', 'F71-greg.hellings@gmail.com', 'F65'}
+    F72  F25  ... F71-andrei.petrovici@gmail.com F71-david.lloyd@redhat.com
+1  3831  920  ...                              0                          0
+2  1423    0  ...                              0                          0
+3  1423    0  ...                              0                          0
+
+[3 rows x 52 columns]
+;.;
+        F72  ...  F71-david.lloyd@redhat.com
+0  0.792366  ...                         0.0
+1  0.000000  ...                         0.0
+2  0.000000  ...                         0.0
+
+[3 rows x 52 columns]
+training_x: (411, 52)
+training_y: 411
+testset_x: (53, 52)
+testset_y: 53
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        48
+           1       0.09      1.00      0.17         5
+
+    accuracy                           0.09        53
+   macro avg       0.05      0.50      0.09        53
+weighted avg       0.01      0.09      0.02        53
+
+accuracy: 0.09433962264150944
+0.1724137931034483
+@@@ tn: 0, fp: 48, fn: 0, tp: 5
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 7, actual label: 0, predicted: 1
+iter: 1, sample_no: 26, actual label: 1, predicted: 1
+iter: 2, sample_no: 29, actual label: 0, predicted: 1
+iter: 3, sample_no: 17, actual label: 0, predicted: 1
+iter: 4, sample_no: 27, actual label: 1, predicted: 1
+iter: 5, sample_no: 14, actual label: 0, predicted: 1
+iter: 6, sample_no: 27, actual label: 1, predicted: 1
+iter: 7, sample_no: 16, actual label: 0, predicted: 1
+iter: 8, sample_no: 1, actual label: 0, predicted: 1
+iter: 9, sample_no: 40, actual label: 0, predicted: 1
+iter: 10, sample_no: 34, actual label: 0, predicted: 1
+iter: 11, sample_no: 9, actual label: 0, predicted: 1
+iter: 12, sample_no: 21, actual label: 0, predicted: 1
+iter: 13, sample_no: 47, actual label: 0, predicted: 1
+iter: 14, sample_no: 50, actual label: 0, predicted: 1
+iter: 15, sample_no: 7, actual label: 0, predicted: 1
+iter: 16, sample_no: 0, actual label: 0, predicted: 1
+iter: 17, sample_no: 21, actual label: 0, predicted: 1
+iter: 18, sample_no: 34, actual label: 0, predicted: 1
+iter: 19, sample_no: 28, actual label: 0, predicted: 1
+iter: 20, sample_no: 12, actual label: 0, predicted: 1
+iter: 21, sample_no: 3, actual label: 0, predicted: 1
+iter: 22, sample_no: 8, actual label: 0, predicted: 1
+iter: 23, sample_no: 38, actual label: 0, predicted: 1
+iter: 24, sample_no: 0, actual label: 0, predicted: 1
+number of samples: 53
+AUC 0.5
+pos_get 5
+total recall stop_at 1.0
+@@@ C - Repeat number: 6
+@@@ D - common_header:  {'F71-darran.lofthouse@jboss.com', 'F3-HttpServerExchange', 'F101', 'F22', 'F3-ConnectedSslStreamChannel', 'F3-int', 'F120', 'F123', 'F71-tomaz.cerar@gmail.com', 'F3-NA', 'F68', 'F3-ioFuture.getException()', 'F71-karm@redhat.com', 'F71-david.lloyd@redhat.com', 'F3-null', 'F71-radosoft@gmail.com', 'F15-NA', 'F117', 'F115', 'F3-ClassLoader', 'F71-jason.greene@redhat.com', 'F3-ClientConnection', 'F15-private', 'F71-proyal@drw.com', 'F71-emuckenh@redhat.com', 'F71-ivan.vonnagy@ensighten.com', 'F25', 'category', 'F105', 'F110', 'F71-andrej.golovnin@googlemail.com', 'F71-stuart.w.douglas@gmail.com', 'F116', 'F3-Map<String String>', 'F41', 'F15-protected', 'F104', 'F3-this.exchange.getRequestScheme()', 'F3-Class', 'F72', 'F126', 'F3-StreamConnection', 'F77', 'F71-lponce@redhat.com', 'F71-adamforgacs256@gmail.com', 'F71-jharting@redhat.com', 'F71-rosolkodv@gmail.com', 'F71-andrei.petrovici@gmail.com', 'F15-public', 'F3-String', 'F71-nmaurer@redhat.com', 'F71-greg.hellings@gmail.com', 'F65'}
+    F72  F25  ... F71-andrei.petrovici@gmail.com F71-david.lloyd@redhat.com
+1  3831  920  ...                              0                          0
+2  1423    0  ...                              0                          0
+3  1423    0  ...                              0                          0
+
+[3 rows x 52 columns]
+;.;
+        F72  ...  F71-david.lloyd@redhat.com
+0  0.792366  ...                         0.0
+1  0.000000  ...                         0.0
+2  0.000000  ...                         0.0
+
+[3 rows x 52 columns]
+training_x: (411, 52)
+training_y: 411
+testset_x: (53, 52)
+testset_y: 53
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        48
+           1       0.09      1.00      0.17         5
+
+    accuracy                           0.09        53
+   macro avg       0.05      0.50      0.09        53
+weighted avg       0.01      0.09      0.02        53
+
+accuracy: 0.09433962264150944
+0.1724137931034483
+@@@ tn: 0, fp: 48, fn: 0, tp: 5
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 0, actual label: 0, predicted: 1
+iter: 1, sample_no: 51, actual label: 0, predicted: 1
+iter: 2, sample_no: 14, actual label: 0, predicted: 1
+iter: 3, sample_no: 18, actual label: 0, predicted: 1
+iter: 4, sample_no: 31, actual label: 0, predicted: 1
+iter: 5, sample_no: 2, actual label: 1, predicted: 1
+iter: 6, sample_no: 16, actual label: 0, predicted: 1
+iter: 7, sample_no: 41, actual label: 0, predicted: 1
+iter: 8, sample_no: 35, actual label: 0, predicted: 1
+iter: 9, sample_no: 38, actual label: 0, predicted: 1
+iter: 10, sample_no: 31, actual label: 0, predicted: 1
+iter: 11, sample_no: 18, actual label: 0, predicted: 1
+iter: 12, sample_no: 36, actual label: 0, predicted: 1
+iter: 13, sample_no: 49, actual label: 0, predicted: 1
+iter: 14, sample_no: 48, actual label: 0, predicted: 1
+iter: 15, sample_no: 29, actual label: 0, predicted: 1
+iter: 16, sample_no: 22, actual label: 0, predicted: 1
+iter: 17, sample_no: 51, actual label: 0, predicted: 1
+iter: 18, sample_no: 15, actual label: 0, predicted: 1
+iter: 19, sample_no: 29, actual label: 0, predicted: 1
+iter: 20, sample_no: 48, actual label: 0, predicted: 1
+iter: 21, sample_no: 50, actual label: 0, predicted: 1
+iter: 22, sample_no: 18, actual label: 0, predicted: 1
+iter: 23, sample_no: 1, actual label: 0, predicted: 1
+iter: 24, sample_no: 42, actual label: 1, predicted: 1
+number of samples: 53
+AUC 0.5
+pos_get 5
+total recall stop_at 1.0
+@@@ C - Repeat number: 7
+@@@ D - common_header:  {'F71-darran.lofthouse@jboss.com', 'F3-HttpServerExchange', 'F101', 'F22', 'F3-ConnectedSslStreamChannel', 'F3-int', 'F120', 'F123', 'F71-tomaz.cerar@gmail.com', 'F3-NA', 'F68', 'F3-ioFuture.getException()', 'F71-karm@redhat.com', 'F71-david.lloyd@redhat.com', 'F3-null', 'F71-radosoft@gmail.com', 'F15-NA', 'F117', 'F115', 'F3-ClassLoader', 'F71-jason.greene@redhat.com', 'F3-ClientConnection', 'F15-private', 'F71-proyal@drw.com', 'F71-emuckenh@redhat.com', 'F71-ivan.vonnagy@ensighten.com', 'F25', 'category', 'F105', 'F110', 'F71-andrej.golovnin@googlemail.com', 'F71-stuart.w.douglas@gmail.com', 'F116', 'F3-Map<String String>', 'F41', 'F15-protected', 'F104', 'F3-this.exchange.getRequestScheme()', 'F3-Class', 'F72', 'F126', 'F3-StreamConnection', 'F77', 'F71-lponce@redhat.com', 'F71-adamforgacs256@gmail.com', 'F71-jharting@redhat.com', 'F71-rosolkodv@gmail.com', 'F71-andrei.petrovici@gmail.com', 'F15-public', 'F3-String', 'F71-nmaurer@redhat.com', 'F71-greg.hellings@gmail.com', 'F65'}
+    F72  F25  ... F71-andrei.petrovici@gmail.com F71-david.lloyd@redhat.com
+1  3831  920  ...                              0                          0
+2  1423    0  ...                              0                          0
+3  1423    0  ...                              0                          0
+
+[3 rows x 52 columns]
+;.;
+        F72  ...  F71-david.lloyd@redhat.com
+0  0.792366  ...                         0.0
+1  0.000000  ...                         0.0
+2  0.000000  ...                         0.0
+
+[3 rows x 52 columns]
+training_x: (411, 52)
+training_y: 411
+testset_x: (53, 52)
+testset_y: 53
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        48
+           1       0.09      1.00      0.17         5
+
+    accuracy                           0.09        53
+   macro avg       0.05      0.50      0.09        53
+weighted avg       0.01      0.09      0.02        53
+
+accuracy: 0.09433962264150944
+0.1724137931034483
+@@@ tn: 0, fp: 48, fn: 0, tp: 5
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 42, actual label: 1, predicted: 1
+iter: 1, sample_no: 25, actual label: 0, predicted: 1
+iter: 2, sample_no: 42, actual label: 1, predicted: 1
+iter: 3, sample_no: 24, actual label: 0, predicted: 1
+iter: 4, sample_no: 6, actual label: 0, predicted: 1
+iter: 5, sample_no: 14, actual label: 0, predicted: 1
+iter: 6, sample_no: 31, actual label: 0, predicted: 1
+iter: 7, sample_no: 46, actual label: 0, predicted: 1
+iter: 8, sample_no: 40, actual label: 0, predicted: 1
+iter: 9, sample_no: 18, actual label: 0, predicted: 1
+iter: 10, sample_no: 12, actual label: 0, predicted: 1
+iter: 11, sample_no: 5, actual label: 0, predicted: 1
+iter: 12, sample_no: 39, actual label: 0, predicted: 1
+iter: 13, sample_no: 51, actual label: 0, predicted: 1
+iter: 14, sample_no: 22, actual label: 0, predicted: 1
+iter: 15, sample_no: 27, actual label: 1, predicted: 1
+iter: 16, sample_no: 30, actual label: 0, predicted: 1
+iter: 17, sample_no: 15, actual label: 0, predicted: 1
+iter: 18, sample_no: 43, actual label: 0, predicted: 1
+iter: 19, sample_no: 34, actual label: 0, predicted: 1
+iter: 20, sample_no: 25, actual label: 0, predicted: 1
+iter: 21, sample_no: 29, actual label: 0, predicted: 1
+iter: 22, sample_no: 41, actual label: 0, predicted: 1
+iter: 23, sample_no: 18, actual label: 0, predicted: 1
+iter: 24, sample_no: 0, actual label: 0, predicted: 1
+number of samples: 53
+AUC 0.5
+pos_get 5
+total recall stop_at 1.0
+@@@ C - Repeat number: 8
+@@@ D - common_header:  {'F71-darran.lofthouse@jboss.com', 'F3-HttpServerExchange', 'F101', 'F22', 'F3-ConnectedSslStreamChannel', 'F3-int', 'F120', 'F123', 'F71-tomaz.cerar@gmail.com', 'F3-NA', 'F68', 'F3-ioFuture.getException()', 'F71-karm@redhat.com', 'F71-david.lloyd@redhat.com', 'F3-null', 'F71-radosoft@gmail.com', 'F15-NA', 'F117', 'F115', 'F3-ClassLoader', 'F71-jason.greene@redhat.com', 'F3-ClientConnection', 'F15-private', 'F71-proyal@drw.com', 'F71-emuckenh@redhat.com', 'F71-ivan.vonnagy@ensighten.com', 'F25', 'category', 'F105', 'F110', 'F71-andrej.golovnin@googlemail.com', 'F71-stuart.w.douglas@gmail.com', 'F116', 'F3-Map<String String>', 'F41', 'F15-protected', 'F104', 'F3-this.exchange.getRequestScheme()', 'F3-Class', 'F72', 'F126', 'F3-StreamConnection', 'F77', 'F71-lponce@redhat.com', 'F71-adamforgacs256@gmail.com', 'F71-jharting@redhat.com', 'F71-rosolkodv@gmail.com', 'F71-andrei.petrovici@gmail.com', 'F15-public', 'F3-String', 'F71-nmaurer@redhat.com', 'F71-greg.hellings@gmail.com', 'F65'}
+    F72  F25  ... F71-andrei.petrovici@gmail.com F71-david.lloyd@redhat.com
+1  3831  920  ...                              0                          0
+2  1423    0  ...                              0                          0
+3  1423    0  ...                              0                          0
+
+[3 rows x 52 columns]
+;.;
+        F72  ...  F71-david.lloyd@redhat.com
+0  0.792366  ...                         0.0
+1  0.000000  ...                         0.0
+2  0.000000  ...                         0.0
+
+[3 rows x 52 columns]
+training_x: (411, 52)
+training_y: 411
+testset_x: (53, 52)
+testset_y: 53
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        48
+           1       0.09      1.00      0.17         5
+
+    accuracy                           0.09        53
+   macro avg       0.05      0.50      0.09        53
+weighted avg       0.01      0.09      0.02        53
+
+accuracy: 0.09433962264150944
+0.1724137931034483
+@@@ tn: 0, fp: 48, fn: 0, tp: 5
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 48, actual label: 0, predicted: 1
+iter: 1, sample_no: 16, actual label: 0, predicted: 1
+iter: 2, sample_no: 25, actual label: 0, predicted: 1
+iter: 3, sample_no: 10, actual label: 0, predicted: 1
+iter: 4, sample_no: 23, actual label: 0, predicted: 1
+iter: 5, sample_no: 40, actual label: 0, predicted: 1
+iter: 6, sample_no: 21, actual label: 0, predicted: 1
+iter: 7, sample_no: 26, actual label: 1, predicted: 1
+iter: 8, sample_no: 26, actual label: 1, predicted: 1
+iter: 9, sample_no: 51, actual label: 0, predicted: 1
+iter: 10, sample_no: 7, actual label: 0, predicted: 1
+iter: 11, sample_no: 15, actual label: 0, predicted: 1
+iter: 12, sample_no: 19, actual label: 0, predicted: 1
+iter: 13, sample_no: 9, actual label: 0, predicted: 1
+iter: 14, sample_no: 42, actual label: 1, predicted: 1
+iter: 15, sample_no: 8, actual label: 0, predicted: 1
+iter: 16, sample_no: 33, actual label: 1, predicted: 1
+iter: 17, sample_no: 28, actual label: 0, predicted: 1
+iter: 18, sample_no: 50, actual label: 0, predicted: 1
+iter: 19, sample_no: 6, actual label: 0, predicted: 1
+iter: 20, sample_no: 5, actual label: 0, predicted: 1
+iter: 21, sample_no: 0, actual label: 0, predicted: 1
+iter: 22, sample_no: 40, actual label: 0, predicted: 1
+iter: 23, sample_no: 1, actual label: 0, predicted: 1
+iter: 24, sample_no: 1, actual label: 0, predicted: 1
+number of samples: 53
+AUC 0.5
+pos_get 5
+total recall stop_at 1.0
+@@@ C - Repeat number: 9
+@@@ D - common_header:  {'F71-darran.lofthouse@jboss.com', 'F3-HttpServerExchange', 'F101', 'F22', 'F3-ConnectedSslStreamChannel', 'F3-int', 'F120', 'F123', 'F71-tomaz.cerar@gmail.com', 'F3-NA', 'F68', 'F3-ioFuture.getException()', 'F71-karm@redhat.com', 'F71-david.lloyd@redhat.com', 'F3-null', 'F71-radosoft@gmail.com', 'F15-NA', 'F117', 'F115', 'F3-ClassLoader', 'F71-jason.greene@redhat.com', 'F3-ClientConnection', 'F15-private', 'F71-proyal@drw.com', 'F71-emuckenh@redhat.com', 'F71-ivan.vonnagy@ensighten.com', 'F25', 'category', 'F105', 'F110', 'F71-andrej.golovnin@googlemail.com', 'F71-stuart.w.douglas@gmail.com', 'F116', 'F3-Map<String String>', 'F41', 'F15-protected', 'F104', 'F3-this.exchange.getRequestScheme()', 'F3-Class', 'F72', 'F126', 'F3-StreamConnection', 'F77', 'F71-lponce@redhat.com', 'F71-adamforgacs256@gmail.com', 'F71-jharting@redhat.com', 'F71-rosolkodv@gmail.com', 'F71-andrei.petrovici@gmail.com', 'F15-public', 'F3-String', 'F71-nmaurer@redhat.com', 'F71-greg.hellings@gmail.com', 'F65'}
+    F72  F25  ... F71-andrei.petrovici@gmail.com F71-david.lloyd@redhat.com
+1  3831  920  ...                              0                          0
+2  1423    0  ...                              0                          0
+3  1423    0  ...                              0                          0
+
+[3 rows x 52 columns]
+;.;
+        F72  ...  F71-david.lloyd@redhat.com
+0  0.792366  ...                         0.0
+1  0.000000  ...                         0.0
+2  0.000000  ...                         0.0
+
+[3 rows x 52 columns]
+training_x: (411, 52)
+training_y: 411
+testset_x: (53, 52)
+testset_y: 53
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        48
+           1       0.09      1.00      0.17         5
+
+    accuracy                           0.09        53
+   macro avg       0.05      0.50      0.09        53
+weighted avg       0.01      0.09      0.02        53
+
+accuracy: 0.09433962264150944
+0.1724137931034483
+@@@ tn: 0, fp: 48, fn: 0, tp: 5
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 37, actual label: 0, predicted: 1
+iter: 1, sample_no: 45, actual label: 0, predicted: 1
+iter: 2, sample_no: 37, actual label: 0, predicted: 1
+iter: 3, sample_no: 20, actual label: 0, predicted: 1
+iter: 4, sample_no: 44, actual label: 0, predicted: 1
+iter: 5, sample_no: 4, actual label: 0, predicted: 1
+iter: 6, sample_no: 31, actual label: 0, predicted: 1
+iter: 7, sample_no: 27, actual label: 1, predicted: 1
+iter: 8, sample_no: 46, actual label: 0, predicted: 1
+iter: 9, sample_no: 41, actual label: 0, predicted: 1
+iter: 10, sample_no: 29, actual label: 0, predicted: 1
+iter: 11, sample_no: 12, actual label: 0, predicted: 1
+iter: 12, sample_no: 13, actual label: 0, predicted: 1
+iter: 13, sample_no: 11, actual label: 0, predicted: 1
+iter: 14, sample_no: 23, actual label: 0, predicted: 1
+iter: 15, sample_no: 51, actual label: 0, predicted: 1
+iter: 16, sample_no: 37, actual label: 0, predicted: 1
+iter: 17, sample_no: 38, actual label: 0, predicted: 1
+iter: 18, sample_no: 22, actual label: 0, predicted: 1
+iter: 19, sample_no: 13, actual label: 0, predicted: 1
+iter: 20, sample_no: 6, actual label: 0, predicted: 1
+iter: 21, sample_no: 47, actual label: 0, predicted: 1
+iter: 22, sample_no: 9, actual label: 0, predicted: 1
+iter: 23, sample_no: 31, actual label: 0, predicted: 1
+iter: 24, sample_no: 23, actual label: 0, predicted: 1
+number of samples: 53
+AUC 0.5
+pos_get 5
+total recall stop_at 1.0
+@@@ C - Repeat number: 10
+@@@ D - common_header:  {'F71-darran.lofthouse@jboss.com', 'F3-HttpServerExchange', 'F101', 'F22', 'F3-ConnectedSslStreamChannel', 'F3-int', 'F120', 'F123', 'F71-tomaz.cerar@gmail.com', 'F3-NA', 'F68', 'F3-ioFuture.getException()', 'F71-karm@redhat.com', 'F71-david.lloyd@redhat.com', 'F3-null', 'F71-radosoft@gmail.com', 'F15-NA', 'F117', 'F115', 'F3-ClassLoader', 'F71-jason.greene@redhat.com', 'F3-ClientConnection', 'F15-private', 'F71-proyal@drw.com', 'F71-emuckenh@redhat.com', 'F71-ivan.vonnagy@ensighten.com', 'F25', 'category', 'F105', 'F110', 'F71-andrej.golovnin@googlemail.com', 'F71-stuart.w.douglas@gmail.com', 'F116', 'F3-Map<String String>', 'F41', 'F15-protected', 'F104', 'F3-this.exchange.getRequestScheme()', 'F3-Class', 'F72', 'F126', 'F3-StreamConnection', 'F77', 'F71-lponce@redhat.com', 'F71-adamforgacs256@gmail.com', 'F71-jharting@redhat.com', 'F71-rosolkodv@gmail.com', 'F71-andrei.petrovici@gmail.com', 'F15-public', 'F3-String', 'F71-nmaurer@redhat.com', 'F71-greg.hellings@gmail.com', 'F65'}
+    F72  F25  ... F71-andrei.petrovici@gmail.com F71-david.lloyd@redhat.com
+1  3831  920  ...                              0                          0
+2  1423    0  ...                              0                          0
+3  1423    0  ...                              0                          0
+
+[3 rows x 52 columns]
+;.;
+        F72  ...  F71-david.lloyd@redhat.com
+0  0.792366  ...                         0.0
+1  0.000000  ...                         0.0
+2  0.000000  ...                         0.0
+
+[3 rows x 52 columns]
+training_x: (411, 52)
+training_y: 411
+testset_x: (53, 52)
+testset_y: 53
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        48
+           1       0.09      1.00      0.17         5
+
+    accuracy                           0.09        53
+   macro avg       0.05      0.50      0.09        53
+weighted avg       0.01      0.09      0.02        53
+
+accuracy: 0.09433962264150944
+0.1724137931034483
+@@@ tn: 0, fp: 48, fn: 0, tp: 5
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 28, actual label: 0, predicted: 1
+iter: 1, sample_no: 23, actual label: 0, predicted: 1
+iter: 2, sample_no: 41, actual label: 0, predicted: 1
+iter: 3, sample_no: 49, actual label: 0, predicted: 1
+iter: 4, sample_no: 28, actual label: 0, predicted: 1
+iter: 5, sample_no: 20, actual label: 0, predicted: 1
+iter: 6, sample_no: 45, actual label: 0, predicted: 1
+iter: 7, sample_no: 50, actual label: 0, predicted: 1
+iter: 8, sample_no: 34, actual label: 0, predicted: 1
+iter: 9, sample_no: 28, actual label: 0, predicted: 1
+iter: 10, sample_no: 22, actual label: 0, predicted: 1
+iter: 11, sample_no: 52, actual label: 0, predicted: 1
+iter: 12, sample_no: 29, actual label: 0, predicted: 1
+iter: 13, sample_no: 24, actual label: 0, predicted: 1
+iter: 14, sample_no: 51, actual label: 0, predicted: 1
+iter: 15, sample_no: 12, actual label: 0, predicted: 1
+iter: 16, sample_no: 39, actual label: 0, predicted: 1
+iter: 17, sample_no: 46, actual label: 0, predicted: 1
+iter: 18, sample_no: 22, actual label: 0, predicted: 1
+iter: 19, sample_no: 34, actual label: 0, predicted: 1
+iter: 20, sample_no: 13, actual label: 0, predicted: 1
+iter: 21, sample_no: 41, actual label: 0, predicted: 1
+iter: 22, sample_no: 45, actual label: 0, predicted: 1
+iter: 23, sample_no: 11, actual label: 0, predicted: 1
+iter: 24, sample_no: 33, actual label: 1, predicted: 1
+number of samples: 53
+AUC 0.5
+pos_get 5
+total recall stop_at 1.0
+----------threshold stop at----------: 1
+AUC [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+AUC_median 0.5
+AUC_iqr 0.0
+cost [0.9622641509433962, 0.9622641509433962, 0.9622641509433962, 0.9622641509433962, 0.9622641509433962, 0.9622641509433962, 0.9622641509433962, 0.9622641509433962, 0.9622641509433962, 0.9622641509433962]
+COST_med 0.9622641509433962
+COST_iqr 0.0
+f1_pos_list [np.float64(0.1724137931034483), np.float64(0.1724137931034483), np.float64(0.1724137931034483), np.float64(0.1724137931034483), np.float64(0.1724137931034483), np.float64(0.1724137931034483), np.float64(0.1724137931034483), np.float64(0.1724137931034483), np.float64(0.1724137931034483), np.float64(0.1724137931034483)]
+f1_pos_med 0.1724137931034483
+total_tn 0
+total_fp 480
+total_fn 0
+total_tp 50
+p= 0.09433962264150944
+r= 1.0
+f= 0.1724137931034483

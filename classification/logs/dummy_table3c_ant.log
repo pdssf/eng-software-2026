@@ -1,0 +1,69 @@
+@@@ A - classifier: DummyClassifier(constant=1, strategy='constant')
+@@@ B - threshold stop at: 1
+@@@ C - Repeat number: 1
+@@@ D - common_header:  {'F3-InputStream', 'F71-jhm@apache.org', 'F120', 'F115', 'F71-donaldp@apache.org', 'F3-String', 'F71-hibou@apache.org', 'F22', 'F71-costin@apache.org', 'F3-boolean', 'F25', 'F3-byte[]', 'F3-Integer', 'F3-Project.MSG_DEBUG', 'F71-jglick@apache.org', 'F41', 'F3-Long', 'F3-char', 'F126', 'F117', 'F71-jskeet@apache.org', 'F71-antoine@apache.org', 'F71-stevel@apache.org', 'F123', 'F72', 'F116', 'F3-FileInputStream', 'F71-sbailliez@apache.org', 'F3-FileOutputStream', 'F3-Object', 'F15-public', 'F71-bodewig@apache.org', 'F15-protected', 'F3-int', 'F65', 'F3-File', 'F3-Project', 'F71-stefano@apache.org', 'F71-conor@apache.org', 'F71-kevj@apache.org', 'F3-Class', 'F3-nestedTask.getTaskName()', 'F3-PrintStream', 'F71-rubys@apache.org', 'F71-jkf@apache.org', 'F71-peterreilly@apache.org', 'F71-ehatcher@apache.org', 'category', 'F104', 'F3-null', 'F110', 'F15-private', 'F105', 'F77', 'F68', 'F71-mbenson@apache.org', 'F101', 'F71-umagesh@apache.org'}
+     F72   F25  ... F71-mbenson@apache.org F71-jhm@apache.org
+1  10851  4384  ...                      1                  0
+2  10851  4384  ...                      1                  0
+3  10851  4384  ...                      1                  0
+
+[3 rows x 57 columns]
+;.;
+        F72      F25  ...  F71-mbenson@apache.org  F71-jhm@apache.org
+0  0.794814  0.85637  ...                     1.0                 0.0
+1  0.794814  0.85637  ...                     1.0                 0.0
+2  0.794814  0.85637  ...                     1.0                 0.0
+
+[3 rows x 57 columns]
+training_x: (1229, 57)
+training_y: 1229
+testset_x: (69, 57)
+testset_y: 69
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00      69.0
+           1       0.00      0.00      0.00       0.0
+
+    accuracy                           0.00      69.0
+   macro avg       0.00      0.00      0.00      69.0
+weighted avg       0.00      0.00      0.00      69.0
+
+accuracy: 0.0
+0.0
+@@@ tn: 0, fp: 69, fn: 0, tp: 0
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 68, actual label: 0, predicted: 1
+iter: 1, sample_no: 21, actual label: 0, predicted: 1
+iter: 2, sample_no: 11, actual label: 0, predicted: 1
+iter: 3, sample_no: 65, actual label: 0, predicted: 1
+iter: 4, sample_no: 11, actual label: 0, predicted: 1
+iter: 5, sample_no: 34, actual label: 0, predicted: 1
+iter: 6, sample_no: 51, actual label: 0, predicted: 1
+iter: 7, sample_no: 20, actual label: 0, predicted: 1
+iter: 8, sample_no: 42, actual label: 0, predicted: 1
+iter: 9, sample_no: 10, actual label: 0, predicted: 1
+iter: 10, sample_no: 54, actual label: 0, predicted: 1
+iter: 11, sample_no: 6, actual label: 0, predicted: 1
+iter: 12, sample_no: 56, actual label: 0, predicted: 1
+iter: 13, sample_no: 29, actual label: 0, predicted: 1
+iter: 14, sample_no: 18, actual label: 0, predicted: 1
+iter: 15, sample_no: 22, actual label: 0, predicted: 1
+iter: 16, sample_no: 65, actual label: 0, predicted: 1
+iter: 17, sample_no: 20, actual label: 0, predicted: 1
+iter: 18, sample_no: 59, actual label: 0, predicted: 1
+iter: 19, sample_no: 1, actual label: 0, predicted: 1
+iter: 20, sample_no: 35, actual label: 0, predicted: 1
+iter: 21, sample_no: 6, actual label: 0, predicted: 1
+iter: 22, sample_no: 43, actual label: 0, predicted: 1
+iter: 23, sample_no: 21, actual label: 0, predicted: 1
+iter: 24, sample_no: 18, actual label: 0, predicted: 1
+number of samples: 69
+Traceback (most recent call last):
+  File "/home/leona/Masters/ES/SA_retrospective/src/baseline.py", line 217, in <module>
+    rate, auc, f1_pos, tn, fp, fn, tp = main(path, stop_at=stopat_id,
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leona/Masters/ES/SA_retrospective/src/baseline.py", line 153, in main
+    total_recall.append(pos_get / pos_all)
+                        ~~~~~~~~^~~~~~~~~
+ZeroDivisionError: division by zero

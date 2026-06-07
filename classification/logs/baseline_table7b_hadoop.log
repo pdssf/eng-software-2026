@@ -1,0 +1,36 @@
+@@@ A - classifier: SVC(class_weight='balanced', kernel='linear', probability=True)
+@@@ B - threshold stop at: 1
+@@@ C - Repeat number: 1
+@@@ D - common_header:  {'F117', 'F3-NA', 'F71-boryas@apache.org', 'F3-String', 'F116', 'F110', 'F15-public', 'F115', 'F3-byte[]', 'F41', 'F3-Path', 'F77', 'F65', 'F3-long', 'F71-sradia@apache.org', 'F126', 'F3-Configuration', 'F105', 'F71-suresh@apache.org', 'F71-tomwhite@apache.org', 'F71-ddas@apache.org', 'F15-private', 'F71-szetszwo@apache.org', 'F15-NA', 'F71-jghoman@apache.org', 'F71-hairong@apache.org', 'F71-cdouglas@apache.org', 'F72', 'category', 'F25', 'F104', 'F71-omalley@apache.org', 'F71-mahadev@apache.org', 'F120', 'F22', 'F123', 'F71-acmurthy@apache.org', 'F71-yhemanth@apache.org', 'F101', 'F15-protected', 'F68', 'F3-int', 'F71-eli@apache.org'}
+     F72  F25  ... F71-acmurthy@apache.org F71-boryas@apache.org
+1  23830  246  ...                       0                     0
+2  23830  246  ...                       0                     0
+3  24036  477  ...                       0                     0
+
+[3 rows x 42 columns]
+;.;
+        F72       F25  ...  F71-acmurthy@apache.org  F71-boryas@apache.org
+0  0.466837  0.443373  ...                      0.0                    0.0
+1  0.466837  0.443373  ...                      0.0                    0.0
+2  0.992347  1.000000  ...                      0.0                    0.0
+
+[3 rows x 42 columns]
+training_x: (204, 42)
+training_y: 204
+testset_x: (2736, 42)
+testset_y: 2736
+Traceback (most recent call last):
+  File "/home/leona/Masters/ES/SA_retrospective/src/baseline.py", line 217, in <module>
+    rate, auc, f1_pos, tn, fp, fn, tp = main(path, stop_at=stopat_id,
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leona/Masters/ES/SA_retrospective/src/baseline.py", line 53, in main
+    clf.fit(training_x, training_y)
+  File "/home/leona/Masters/ES/SA_retrospective/venv/lib/python3.12/site-packages/sklearn/base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leona/Masters/ES/SA_retrospective/venv/lib/python3.12/site-packages/sklearn/svm/_base.py", line 215, in fit
+    y = self._validate_targets(y)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leona/Masters/ES/SA_retrospective/venv/lib/python3.12/site-packages/sklearn/svm/_base.py", line 759, in _validate_targets
+    raise ValueError(
+ValueError: The number of classes has to be greater than one; got 1 class

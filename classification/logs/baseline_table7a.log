@@ -1,0 +1,638 @@
+@@@ A - classifier: SVC(class_weight='balanced', kernel='linear', probability=True)
+@@@ B - threshold stop at: 1
+@@@ C - Repeat number: 1
+@@@ D - common_header:  {'category', 'F72', 'F77', 'F101', 'F65', 'F126', 'F123', 'F116', 'F15-NA', 'F115', 'F120', 'F104', 'F22', 'F41', 'F117', 'F25', 'F3-String', 'F110', 'F68', 'F105', 'F15-public', 'F3-NA', 'F3-int'}
+     F72   F25  F65  F68  ...  F115   F77   F41 F126
+1   2562  1117  180   33  ...  -1.0   279  1183  558
+2   2562  1117  180   33  ...  -1.0  1227  1183  558
+1  22821  1931   28  278  ...   0.5  2237   868    0
+
+[3 rows x 22 columns]
+;.;
+        F72       F25       F65     F68  ...  F115       F77       F41  F126
+0  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.021787  0.231010   1.0
+1  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.099143  0.231010   1.0
+2  1.000000  0.422041  0.091216  0.6900  ...  0.75  0.181559  0.169498   0.0
+
+[3 rows x 22 columns]
+training_x: (460, 22)
+training_y: 460
+testset_x: (308, 22)
+testset_y: 308
+              precision    recall  f1-score   support
+
+           0       0.80      0.54      0.65       185
+           1       0.54      0.80      0.64       123
+
+    accuracy                           0.64       308
+   macro avg       0.67      0.67      0.64       308
+weighted avg       0.69      0.64      0.64       308
+
+accuracy: 0.6428571428571429
+0.6405228758169934
+@@@ tn: 100, fp: 85, fn: 25, tp: 98
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 255, actual label: 1, predicted: 1
+iter: 1, sample_no: 252, actual label: 1, predicted: 1
+iter: 2, sample_no: 78, actual label: 0, predicted: 0
+iter: 3, sample_no: 284, actual label: 0, predicted: 1
+iter: 4, sample_no: 138, actual label: 0, predicted: 1
+iter: 5, sample_no: 159, actual label: 0, predicted: 1
+iter: 6, sample_no: 233, actual label: 0, predicted: 0
+iter: 7, sample_no: 259, actual label: 0, predicted: 0
+iter: 8, sample_no: 68, actual label: 1, predicted: 1
+iter: 9, sample_no: 119, actual label: 0, predicted: 1
+iter: 10, sample_no: 178, actual label: 0, predicted: 1
+iter: 11, sample_no: 235, actual label: 1, predicted: 1
+iter: 12, sample_no: 280, actual label: 0, predicted: 1
+iter: 13, sample_no: 121, actual label: 1, predicted: 1
+iter: 14, sample_no: 286, actual label: 1, predicted: 0
+iter: 15, sample_no: 187, actual label: 1, predicted: 1
+iter: 16, sample_no: 217, actual label: 0, predicted: 0
+iter: 17, sample_no: 222, actual label: 1, predicted: 1
+iter: 18, sample_no: 246, actual label: 0, predicted: 1
+iter: 19, sample_no: 39, actual label: 1, predicted: 0
+iter: 20, sample_no: 233, actual label: 0, predicted: 0
+iter: 21, sample_no: 266, actual label: 0, predicted: 0
+iter: 22, sample_no: 293, actual label: 1, predicted: 0
+iter: 23, sample_no: 155, actual label: 1, predicted: 1
+iter: 24, sample_no: 82, actual label: 1, predicted: 1
+number of samples: 308
+AUC 0.6791913865084597
+pos_get 123
+total recall stop_at 1.0
+@@@ C - Repeat number: 2
+@@@ D - common_header:  {'category', 'F72', 'F77', 'F101', 'F65', 'F126', 'F123', 'F116', 'F15-NA', 'F115', 'F120', 'F104', 'F22', 'F41', 'F117', 'F25', 'F3-String', 'F110', 'F68', 'F105', 'F15-public', 'F3-NA', 'F3-int'}
+     F72   F25  F65  F68  ...  F115   F77   F41 F126
+1   2562  1117  180   33  ...  -1.0   279  1183  558
+2   2562  1117  180   33  ...  -1.0  1227  1183  558
+1  22821  1931   28  278  ...   0.5  2237   868    0
+
+[3 rows x 22 columns]
+;.;
+        F72       F25       F65     F68  ...  F115       F77       F41  F126
+0  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.021787  0.231010   1.0
+1  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.099143  0.231010   1.0
+2  1.000000  0.422041  0.091216  0.6900  ...  0.75  0.181559  0.169498   0.0
+
+[3 rows x 22 columns]
+training_x: (460, 22)
+training_y: 460
+testset_x: (308, 22)
+testset_y: 308
+              precision    recall  f1-score   support
+
+           0       0.80      0.54      0.65       185
+           1       0.54      0.80      0.64       123
+
+    accuracy                           0.64       308
+   macro avg       0.67      0.67      0.64       308
+weighted avg       0.69      0.64      0.64       308
+
+accuracy: 0.6428571428571429
+0.6405228758169934
+@@@ tn: 100, fp: 85, fn: 25, tp: 98
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 241, actual label: 1, predicted: 1
+iter: 1, sample_no: 93, actual label: 0, predicted: 1
+iter: 2, sample_no: 282, actual label: 0, predicted: 1
+iter: 3, sample_no: 10, actual label: 0, predicted: 0
+iter: 4, sample_no: 188, actual label: 1, predicted: 0
+iter: 5, sample_no: 75, actual label: 1, predicted: 1
+iter: 6, sample_no: 93, actual label: 0, predicted: 1
+iter: 7, sample_no: 245, actual label: 0, predicted: 1
+iter: 8, sample_no: 107, actual label: 1, predicted: 1
+iter: 9, sample_no: 62, actual label: 1, predicted: 0
+iter: 10, sample_no: 191, actual label: 0, predicted: 1
+iter: 11, sample_no: 69, actual label: 1, predicted: 1
+iter: 12, sample_no: 245, actual label: 0, predicted: 1
+iter: 13, sample_no: 1, actual label: 0, predicted: 0
+iter: 14, sample_no: 98, actual label: 0, predicted: 0
+iter: 15, sample_no: 287, actual label: 0, predicted: 1
+iter: 16, sample_no: 196, actual label: 0, predicted: 1
+iter: 17, sample_no: 198, actual label: 1, predicted: 1
+iter: 18, sample_no: 305, actual label: 0, predicted: 0
+iter: 19, sample_no: 161, actual label: 0, predicted: 1
+iter: 20, sample_no: 71, actual label: 1, predicted: 1
+iter: 21, sample_no: 130, actual label: 0, predicted: 1
+iter: 22, sample_no: 195, actual label: 0, predicted: 0
+iter: 23, sample_no: 242, actual label: 1, predicted: 1
+iter: 24, sample_no: 85, actual label: 0, predicted: 1
+number of samples: 308
+AUC 0.6791913865084597
+pos_get 123
+total recall stop_at 1.0
+@@@ C - Repeat number: 3
+@@@ D - common_header:  {'category', 'F72', 'F77', 'F101', 'F65', 'F126', 'F123', 'F116', 'F15-NA', 'F115', 'F120', 'F104', 'F22', 'F41', 'F117', 'F25', 'F3-String', 'F110', 'F68', 'F105', 'F15-public', 'F3-NA', 'F3-int'}
+     F72   F25  F65  F68  ...  F115   F77   F41 F126
+1   2562  1117  180   33  ...  -1.0   279  1183  558
+2   2562  1117  180   33  ...  -1.0  1227  1183  558
+1  22821  1931   28  278  ...   0.5  2237   868    0
+
+[3 rows x 22 columns]
+;.;
+        F72       F25       F65     F68  ...  F115       F77       F41  F126
+0  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.021787  0.231010   1.0
+1  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.099143  0.231010   1.0
+2  1.000000  0.422041  0.091216  0.6900  ...  0.75  0.181559  0.169498   0.0
+
+[3 rows x 22 columns]
+training_x: (460, 22)
+training_y: 460
+testset_x: (308, 22)
+testset_y: 308
+              precision    recall  f1-score   support
+
+           0       0.80      0.54      0.65       185
+           1       0.54      0.80      0.64       123
+
+    accuracy                           0.64       308
+   macro avg       0.67      0.67      0.64       308
+weighted avg       0.69      0.64      0.64       308
+
+accuracy: 0.6428571428571429
+0.6405228758169934
+@@@ tn: 100, fp: 85, fn: 25, tp: 98
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 131, actual label: 0, predicted: 1
+iter: 1, sample_no: 160, actual label: 1, predicted: 1
+iter: 2, sample_no: 246, actual label: 0, predicted: 1
+iter: 3, sample_no: 272, actual label: 1, predicted: 1
+iter: 4, sample_no: 78, actual label: 0, predicted: 0
+iter: 5, sample_no: 258, actual label: 0, predicted: 1
+iter: 6, sample_no: 158, actual label: 0, predicted: 1
+iter: 7, sample_no: 256, actual label: 0, predicted: 0
+iter: 8, sample_no: 224, actual label: 1, predicted: 1
+iter: 9, sample_no: 42, actual label: 0, predicted: 0
+iter: 10, sample_no: 149, actual label: 1, predicted: 0
+iter: 11, sample_no: 285, actual label: 1, predicted: 0
+iter: 12, sample_no: 11, actual label: 0, predicted: 0
+iter: 13, sample_no: 107, actual label: 1, predicted: 1
+iter: 14, sample_no: 164, actual label: 0, predicted: 0
+iter: 15, sample_no: 86, actual label: 0, predicted: 0
+iter: 16, sample_no: 304, actual label: 1, predicted: 1
+iter: 17, sample_no: 49, actual label: 1, predicted: 1
+iter: 18, sample_no: 219, actual label: 0, predicted: 0
+iter: 19, sample_no: 193, actual label: 0, predicted: 1
+iter: 20, sample_no: 64, actual label: 0, predicted: 0
+iter: 21, sample_no: 147, actual label: 0, predicted: 1
+iter: 22, sample_no: 207, actual label: 1, predicted: 1
+iter: 23, sample_no: 293, actual label: 1, predicted: 0
+iter: 24, sample_no: 142, actual label: 1, predicted: 1
+number of samples: 308
+AUC 0.6791474401230498
+pos_get 123
+total recall stop_at 1.0
+@@@ C - Repeat number: 4
+@@@ D - common_header:  {'category', 'F72', 'F77', 'F101', 'F65', 'F126', 'F123', 'F116', 'F15-NA', 'F115', 'F120', 'F104', 'F22', 'F41', 'F117', 'F25', 'F3-String', 'F110', 'F68', 'F105', 'F15-public', 'F3-NA', 'F3-int'}
+     F72   F25  F65  F68  ...  F115   F77   F41 F126
+1   2562  1117  180   33  ...  -1.0   279  1183  558
+2   2562  1117  180   33  ...  -1.0  1227  1183  558
+1  22821  1931   28  278  ...   0.5  2237   868    0
+
+[3 rows x 22 columns]
+;.;
+        F72       F25       F65     F68  ...  F115       F77       F41  F126
+0  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.021787  0.231010   1.0
+1  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.099143  0.231010   1.0
+2  1.000000  0.422041  0.091216  0.6900  ...  0.75  0.181559  0.169498   0.0
+
+[3 rows x 22 columns]
+training_x: (460, 22)
+training_y: 460
+testset_x: (308, 22)
+testset_y: 308
+              precision    recall  f1-score   support
+
+           0       0.80      0.54      0.65       185
+           1       0.54      0.80      0.64       123
+
+    accuracy                           0.64       308
+   macro avg       0.67      0.67      0.64       308
+weighted avg       0.69      0.64      0.64       308
+
+accuracy: 0.6428571428571429
+0.6405228758169934
+@@@ tn: 100, fp: 85, fn: 25, tp: 98
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 40, actual label: 0, predicted: 0
+iter: 1, sample_no: 277, actual label: 1, predicted: 1
+iter: 2, sample_no: 146, actual label: 1, predicted: 1
+iter: 3, sample_no: 41, actual label: 0, predicted: 0
+iter: 4, sample_no: 208, actual label: 1, predicted: 1
+iter: 5, sample_no: 35, actual label: 1, predicted: 0
+iter: 6, sample_no: 146, actual label: 1, predicted: 1
+iter: 7, sample_no: 13, actual label: 0, predicted: 1
+iter: 8, sample_no: 289, actual label: 0, predicted: 0
+iter: 9, sample_no: 44, actual label: 1, predicted: 0
+iter: 10, sample_no: 126, actual label: 1, predicted: 1
+iter: 11, sample_no: 92, actual label: 1, predicted: 1
+iter: 12, sample_no: 5, actual label: 0, predicted: 1
+iter: 13, sample_no: 177, actual label: 0, predicted: 1
+iter: 14, sample_no: 77, actual label: 1, predicted: 0
+iter: 15, sample_no: 167, actual label: 1, predicted: 1
+iter: 16, sample_no: 182, actual label: 1, predicted: 1
+iter: 17, sample_no: 176, actual label: 1, predicted: 1
+iter: 18, sample_no: 116, actual label: 0, predicted: 0
+iter: 19, sample_no: 153, actual label: 0, predicted: 1
+iter: 20, sample_no: 9, actual label: 0, predicted: 0
+iter: 21, sample_no: 35, actual label: 1, predicted: 0
+iter: 22, sample_no: 103, actual label: 0, predicted: 0
+iter: 23, sample_no: 237, actual label: 1, predicted: 1
+iter: 24, sample_no: 253, actual label: 0, predicted: 0
+number of samples: 308
+AUC 0.6791474401230498
+pos_get 123
+total recall stop_at 1.0
+@@@ C - Repeat number: 5
+@@@ D - common_header:  {'category', 'F72', 'F77', 'F101', 'F65', 'F126', 'F123', 'F116', 'F15-NA', 'F115', 'F120', 'F104', 'F22', 'F41', 'F117', 'F25', 'F3-String', 'F110', 'F68', 'F105', 'F15-public', 'F3-NA', 'F3-int'}
+     F72   F25  F65  F68  ...  F115   F77   F41 F126
+1   2562  1117  180   33  ...  -1.0   279  1183  558
+2   2562  1117  180   33  ...  -1.0  1227  1183  558
+1  22821  1931   28  278  ...   0.5  2237   868    0
+
+[3 rows x 22 columns]
+;.;
+        F72       F25       F65     F68  ...  F115       F77       F41  F126
+0  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.021787  0.231010   1.0
+1  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.099143  0.231010   1.0
+2  1.000000  0.422041  0.091216  0.6900  ...  0.75  0.181559  0.169498   0.0
+
+[3 rows x 22 columns]
+training_x: (460, 22)
+training_y: 460
+testset_x: (308, 22)
+testset_y: 308
+              precision    recall  f1-score   support
+
+           0       0.80      0.54      0.65       185
+           1       0.54      0.80      0.64       123
+
+    accuracy                           0.64       308
+   macro avg       0.67      0.67      0.64       308
+weighted avg       0.69      0.64      0.64       308
+
+accuracy: 0.6428571428571429
+0.6405228758169934
+@@@ tn: 100, fp: 85, fn: 25, tp: 98
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 264, actual label: 0, predicted: 0
+iter: 1, sample_no: 41, actual label: 0, predicted: 0
+iter: 2, sample_no: 100, actual label: 0, predicted: 0
+iter: 3, sample_no: 215, actual label: 0, predicted: 1
+iter: 4, sample_no: 58, actual label: 0, predicted: 1
+iter: 5, sample_no: 94, actual label: 1, predicted: 1
+iter: 6, sample_no: 10, actual label: 0, predicted: 0
+iter: 7, sample_no: 108, actual label: 0, predicted: 0
+iter: 8, sample_no: 221, actual label: 0, predicted: 1
+iter: 9, sample_no: 154, actual label: 0, predicted: 1
+iter: 10, sample_no: 158, actual label: 0, predicted: 1
+iter: 11, sample_no: 274, actual label: 0, predicted: 0
+iter: 12, sample_no: 269, actual label: 1, predicted: 0
+iter: 13, sample_no: 55, actual label: 1, predicted: 1
+iter: 14, sample_no: 214, actual label: 0, predicted: 1
+iter: 15, sample_no: 64, actual label: 0, predicted: 0
+iter: 16, sample_no: 100, actual label: 0, predicted: 0
+iter: 17, sample_no: 25, actual label: 0, predicted: 0
+iter: 18, sample_no: 152, actual label: 1, predicted: 1
+iter: 19, sample_no: 215, actual label: 0, predicted: 1
+iter: 20, sample_no: 177, actual label: 0, predicted: 1
+iter: 21, sample_no: 120, actual label: 1, predicted: 1
+iter: 22, sample_no: 152, actual label: 1, predicted: 1
+iter: 23, sample_no: 42, actual label: 0, predicted: 0
+iter: 24, sample_no: 163, actual label: 0, predicted: 0
+number of samples: 308
+AUC 0.6791254669303449
+pos_get 123
+total recall stop_at 1.0
+@@@ C - Repeat number: 6
+@@@ D - common_header:  {'category', 'F72', 'F77', 'F101', 'F65', 'F126', 'F123', 'F116', 'F15-NA', 'F115', 'F120', 'F104', 'F22', 'F41', 'F117', 'F25', 'F3-String', 'F110', 'F68', 'F105', 'F15-public', 'F3-NA', 'F3-int'}
+     F72   F25  F65  F68  ...  F115   F77   F41 F126
+1   2562  1117  180   33  ...  -1.0   279  1183  558
+2   2562  1117  180   33  ...  -1.0  1227  1183  558
+1  22821  1931   28  278  ...   0.5  2237   868    0
+
+[3 rows x 22 columns]
+;.;
+        F72       F25       F65     F68  ...  F115       F77       F41  F126
+0  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.021787  0.231010   1.0
+1  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.099143  0.231010   1.0
+2  1.000000  0.422041  0.091216  0.6900  ...  0.75  0.181559  0.169498   0.0
+
+[3 rows x 22 columns]
+training_x: (460, 22)
+training_y: 460
+testset_x: (308, 22)
+testset_y: 308
+              precision    recall  f1-score   support
+
+           0       0.80      0.54      0.65       185
+           1       0.54      0.80      0.64       123
+
+    accuracy                           0.64       308
+   macro avg       0.67      0.67      0.64       308
+weighted avg       0.69      0.64      0.64       308
+
+accuracy: 0.6428571428571429
+0.6405228758169934
+@@@ tn: 100, fp: 85, fn: 25, tp: 98
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 51, actual label: 0, predicted: 0
+iter: 1, sample_no: 237, actual label: 1, predicted: 1
+iter: 2, sample_no: 179, actual label: 0, predicted: 0
+iter: 3, sample_no: 165, actual label: 1, predicted: 1
+iter: 4, sample_no: 98, actual label: 0, predicted: 0
+iter: 5, sample_no: 69, actual label: 1, predicted: 1
+iter: 6, sample_no: 0, actual label: 1, predicted: 1
+iter: 7, sample_no: 55, actual label: 1, predicted: 1
+iter: 8, sample_no: 13, actual label: 0, predicted: 1
+iter: 9, sample_no: 43, actual label: 0, predicted: 0
+iter: 10, sample_no: 150, actual label: 0, predicted: 0
+iter: 11, sample_no: 73, actual label: 1, predicted: 1
+iter: 12, sample_no: 265, actual label: 1, predicted: 1
+iter: 13, sample_no: 23, actual label: 0, predicted: 1
+iter: 14, sample_no: 60, actual label: 0, predicted: 0
+iter: 15, sample_no: 266, actual label: 0, predicted: 0
+iter: 16, sample_no: 104, actual label: 1, predicted: 1
+iter: 17, sample_no: 149, actual label: 1, predicted: 0
+iter: 18, sample_no: 262, actual label: 1, predicted: 1
+iter: 19, sample_no: 256, actual label: 0, predicted: 0
+iter: 20, sample_no: 198, actual label: 1, predicted: 1
+iter: 21, sample_no: 100, actual label: 0, predicted: 0
+iter: 22, sample_no: 256, actual label: 0, predicted: 0
+iter: 23, sample_no: 68, actual label: 1, predicted: 1
+iter: 24, sample_no: 79, actual label: 0, predicted: 1
+number of samples: 308
+AUC 0.6791474401230498
+pos_get 123
+total recall stop_at 1.0
+@@@ C - Repeat number: 7
+@@@ D - common_header:  {'category', 'F72', 'F77', 'F101', 'F65', 'F126', 'F123', 'F116', 'F15-NA', 'F115', 'F120', 'F104', 'F22', 'F41', 'F117', 'F25', 'F3-String', 'F110', 'F68', 'F105', 'F15-public', 'F3-NA', 'F3-int'}
+     F72   F25  F65  F68  ...  F115   F77   F41 F126
+1   2562  1117  180   33  ...  -1.0   279  1183  558
+2   2562  1117  180   33  ...  -1.0  1227  1183  558
+1  22821  1931   28  278  ...   0.5  2237   868    0
+
+[3 rows x 22 columns]
+;.;
+        F72       F25       F65     F68  ...  F115       F77       F41  F126
+0  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.021787  0.231010   1.0
+1  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.099143  0.231010   1.0
+2  1.000000  0.422041  0.091216  0.6900  ...  0.75  0.181559  0.169498   0.0
+
+[3 rows x 22 columns]
+training_x: (460, 22)
+training_y: 460
+testset_x: (308, 22)
+testset_y: 308
+              precision    recall  f1-score   support
+
+           0       0.80      0.54      0.65       185
+           1       0.54      0.80      0.64       123
+
+    accuracy                           0.64       308
+   macro avg       0.67      0.67      0.64       308
+weighted avg       0.69      0.64      0.64       308
+
+accuracy: 0.6428571428571429
+0.6405228758169934
+@@@ tn: 100, fp: 85, fn: 25, tp: 98
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 173, actual label: 1, predicted: 1
+iter: 1, sample_no: 38, actual label: 1, predicted: 0
+iter: 2, sample_no: 244, actual label: 0, predicted: 1
+iter: 3, sample_no: 55, actual label: 1, predicted: 1
+iter: 4, sample_no: 238, actual label: 0, predicted: 0
+iter: 5, sample_no: 135, actual label: 0, predicted: 0
+iter: 6, sample_no: 33, actual label: 1, predicted: 0
+iter: 7, sample_no: 93, actual label: 0, predicted: 1
+iter: 8, sample_no: 61, actual label: 0, predicted: 0
+iter: 9, sample_no: 67, actual label: 1, predicted: 1
+iter: 10, sample_no: 8, actual label: 0, predicted: 0
+iter: 11, sample_no: 236, actual label: 0, predicted: 1
+iter: 12, sample_no: 216, actual label: 0, predicted: 1
+iter: 13, sample_no: 67, actual label: 1, predicted: 1
+iter: 14, sample_no: 118, actual label: 0, predicted: 0
+iter: 15, sample_no: 291, actual label: 0, predicted: 1
+iter: 16, sample_no: 274, actual label: 0, predicted: 0
+iter: 17, sample_no: 271, actual label: 0, predicted: 0
+iter: 18, sample_no: 27, actual label: 0, predicted: 0
+iter: 19, sample_no: 23, actual label: 0, predicted: 1
+iter: 20, sample_no: 204, actual label: 1, predicted: 1
+iter: 21, sample_no: 81, actual label: 0, predicted: 1
+iter: 22, sample_no: 185, actual label: 1, predicted: 1
+iter: 23, sample_no: 55, actual label: 1, predicted: 1
+iter: 24, sample_no: 2, actual label: 1, predicted: 1
+number of samples: 308
+AUC 0.6793232256646891
+pos_get 123
+total recall stop_at 1.0
+@@@ C - Repeat number: 8
+@@@ D - common_header:  {'category', 'F72', 'F77', 'F101', 'F65', 'F126', 'F123', 'F116', 'F15-NA', 'F115', 'F120', 'F104', 'F22', 'F41', 'F117', 'F25', 'F3-String', 'F110', 'F68', 'F105', 'F15-public', 'F3-NA', 'F3-int'}
+     F72   F25  F65  F68  ...  F115   F77   F41 F126
+1   2562  1117  180   33  ...  -1.0   279  1183  558
+2   2562  1117  180   33  ...  -1.0  1227  1183  558
+1  22821  1931   28  278  ...   0.5  2237   868    0
+
+[3 rows x 22 columns]
+;.;
+        F72       F25       F65     F68  ...  F115       F77       F41  F126
+0  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.021787  0.231010   1.0
+1  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.099143  0.231010   1.0
+2  1.000000  0.422041  0.091216  0.6900  ...  0.75  0.181559  0.169498   0.0
+
+[3 rows x 22 columns]
+training_x: (460, 22)
+training_y: 460
+testset_x: (308, 22)
+testset_y: 308
+              precision    recall  f1-score   support
+
+           0       0.80      0.54      0.65       185
+           1       0.54      0.80      0.64       123
+
+    accuracy                           0.64       308
+   macro avg       0.67      0.67      0.64       308
+weighted avg       0.69      0.64      0.64       308
+
+accuracy: 0.6428571428571429
+0.6405228758169934
+@@@ tn: 100, fp: 85, fn: 25, tp: 98
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 109, actual label: 1, predicted: 1
+iter: 1, sample_no: 169, actual label: 1, predicted: 1
+iter: 2, sample_no: 125, actual label: 0, predicted: 1
+iter: 3, sample_no: 76, actual label: 1, predicted: 1
+iter: 4, sample_no: 127, actual label: 0, predicted: 0
+iter: 5, sample_no: 51, actual label: 0, predicted: 0
+iter: 6, sample_no: 161, actual label: 0, predicted: 1
+iter: 7, sample_no: 92, actual label: 1, predicted: 1
+iter: 8, sample_no: 191, actual label: 0, predicted: 1
+iter: 9, sample_no: 50, actual label: 1, predicted: 0
+iter: 10, sample_no: 178, actual label: 0, predicted: 1
+iter: 11, sample_no: 183, actual label: 0, predicted: 0
+iter: 12, sample_no: 231, actual label: 0, predicted: 0
+iter: 13, sample_no: 143, actual label: 1, predicted: 1
+iter: 14, sample_no: 21, actual label: 0, predicted: 0
+iter: 15, sample_no: 187, actual label: 1, predicted: 1
+iter: 16, sample_no: 231, actual label: 0, predicted: 0
+iter: 17, sample_no: 240, actual label: 1, predicted: 1
+iter: 18, sample_no: 136, actual label: 0, predicted: 1
+iter: 19, sample_no: 156, actual label: 0, predicted: 1
+iter: 20, sample_no: 4, actual label: 0, predicted: 0
+iter: 21, sample_no: 124, actual label: 1, predicted: 1
+iter: 22, sample_no: 85, actual label: 0, predicted: 1
+iter: 23, sample_no: 270, actual label: 0, predicted: 0
+iter: 24, sample_no: 101, actual label: 0, predicted: 0
+number of samples: 308
+AUC 0.6792353328938694
+pos_get 123
+total recall stop_at 1.0
+@@@ C - Repeat number: 9
+@@@ D - common_header:  {'category', 'F72', 'F77', 'F101', 'F65', 'F126', 'F123', 'F116', 'F15-NA', 'F115', 'F120', 'F104', 'F22', 'F41', 'F117', 'F25', 'F3-String', 'F110', 'F68', 'F105', 'F15-public', 'F3-NA', 'F3-int'}
+     F72   F25  F65  F68  ...  F115   F77   F41 F126
+1   2562  1117  180   33  ...  -1.0   279  1183  558
+2   2562  1117  180   33  ...  -1.0  1227  1183  558
+1  22821  1931   28  278  ...   0.5  2237   868    0
+
+[3 rows x 22 columns]
+;.;
+        F72       F25       F65     F68  ...  F115       F77       F41  F126
+0  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.021787  0.231010   1.0
+1  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.099143  0.231010   1.0
+2  1.000000  0.422041  0.091216  0.6900  ...  0.75  0.181559  0.169498   0.0
+
+[3 rows x 22 columns]
+training_x: (460, 22)
+training_y: 460
+testset_x: (308, 22)
+testset_y: 308
+              precision    recall  f1-score   support
+
+           0       0.80      0.54      0.65       185
+           1       0.54      0.80      0.64       123
+
+    accuracy                           0.64       308
+   macro avg       0.67      0.67      0.64       308
+weighted avg       0.69      0.64      0.64       308
+
+accuracy: 0.6428571428571429
+0.6405228758169934
+@@@ tn: 100, fp: 85, fn: 25, tp: 98
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 57, actual label: 1, predicted: 1
+iter: 1, sample_no: 170, actual label: 0, predicted: 0
+iter: 2, sample_no: 130, actual label: 0, predicted: 1
+iter: 3, sample_no: 26, actual label: 0, predicted: 0
+iter: 4, sample_no: 294, actual label: 0, predicted: 1
+iter: 5, sample_no: 76, actual label: 1, predicted: 1
+iter: 6, sample_no: 81, actual label: 0, predicted: 1
+iter: 7, sample_no: 216, actual label: 0, predicted: 1
+iter: 8, sample_no: 110, actual label: 0, predicted: 0
+iter: 9, sample_no: 140, actual label: 0, predicted: 1
+iter: 10, sample_no: 139, actual label: 0, predicted: 1
+iter: 11, sample_no: 212, actual label: 0, predicted: 1
+iter: 12, sample_no: 259, actual label: 0, predicted: 0
+iter: 13, sample_no: 122, actual label: 0, predicted: 1
+iter: 14, sample_no: 238, actual label: 0, predicted: 0
+iter: 15, sample_no: 224, actual label: 1, predicted: 1
+iter: 16, sample_no: 236, actual label: 0, predicted: 1
+iter: 17, sample_no: 108, actual label: 0, predicted: 0
+iter: 18, sample_no: 262, actual label: 1, predicted: 1
+iter: 19, sample_no: 305, actual label: 0, predicted: 0
+iter: 20, sample_no: 140, actual label: 0, predicted: 1
+iter: 21, sample_no: 147, actual label: 0, predicted: 1
+iter: 22, sample_no: 104, actual label: 1, predicted: 1
+iter: 23, sample_no: 122, actual label: 0, predicted: 1
+iter: 24, sample_no: 32, actual label: 0, predicted: 0
+number of samples: 308
+AUC 0.6791474401230498
+pos_get 123
+total recall stop_at 1.0
+@@@ C - Repeat number: 10
+@@@ D - common_header:  {'category', 'F72', 'F77', 'F101', 'F65', 'F126', 'F123', 'F116', 'F15-NA', 'F115', 'F120', 'F104', 'F22', 'F41', 'F117', 'F25', 'F3-String', 'F110', 'F68', 'F105', 'F15-public', 'F3-NA', 'F3-int'}
+     F72   F25  F65  F68  ...  F115   F77   F41 F126
+1   2562  1117  180   33  ...  -1.0   279  1183  558
+2   2562  1117  180   33  ...  -1.0  1227  1183  558
+1  22821  1931   28  278  ...   0.5  2237   868    0
+
+[3 rows x 22 columns]
+;.;
+        F72       F25       F65     F68  ...  F115       F77       F41  F126
+0  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.021787  0.231010   1.0
+1  0.063817  0.242270  0.604730  0.0775  ...  0.00  0.099143  0.231010   1.0
+2  1.000000  0.422041  0.091216  0.6900  ...  0.75  0.181559  0.169498   0.0
+
+[3 rows x 22 columns]
+training_x: (460, 22)
+training_y: 460
+testset_x: (308, 22)
+testset_y: 308
+              precision    recall  f1-score   support
+
+           0       0.80      0.54      0.65       185
+           1       0.54      0.80      0.64       123
+
+    accuracy                           0.64       308
+   macro avg       0.67      0.67      0.64       308
+weighted avg       0.69      0.64      0.64       308
+
+accuracy: 0.6428571428571429
+0.6405228758169934
+@@@ tn: 100, fp: 85, fn: 25, tp: 98
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 156, actual label: 0, predicted: 1
+iter: 1, sample_no: 12, actual label: 0, predicted: 1
+iter: 2, sample_no: 194, actual label: 0, predicted: 1
+iter: 3, sample_no: 37, actual label: 0, predicted: 1
+iter: 4, sample_no: 71, actual label: 1, predicted: 1
+iter: 5, sample_no: 248, actual label: 0, predicted: 1
+iter: 6, sample_no: 146, actual label: 1, predicted: 1
+iter: 7, sample_no: 33, actual label: 1, predicted: 0
+iter: 8, sample_no: 249, actual label: 0, predicted: 0
+iter: 9, sample_no: 275, actual label: 1, predicted: 1
+iter: 10, sample_no: 89, actual label: 1, predicted: 1
+iter: 11, sample_no: 23, actual label: 0, predicted: 1
+iter: 12, sample_no: 75, actual label: 1, predicted: 1
+iter: 13, sample_no: 88, actual label: 1, predicted: 1
+iter: 14, sample_no: 35, actual label: 1, predicted: 0
+iter: 15, sample_no: 247, actual label: 1, predicted: 1
+iter: 16, sample_no: 270, actual label: 0, predicted: 0
+iter: 17, sample_no: 175, actual label: 1, predicted: 1
+iter: 18, sample_no: 224, actual label: 1, predicted: 1
+iter: 19, sample_no: 307, actual label: 0, predicted: 1
+iter: 20, sample_no: 24, actual label: 1, predicted: 0
+iter: 21, sample_no: 132, actual label: 0, predicted: 0
+iter: 22, sample_no: 303, actual label: 0, predicted: 0
+iter: 23, sample_no: 254, actual label: 0, predicted: 1
+iter: 24, sample_no: 282, actual label: 0, predicted: 1
+number of samples: 308
+AUC 0.6791913865084597
+pos_get 123
+total recall stop_at 1.0
+----------threshold stop at----------: 1
+AUC [0.6791913865084597, 0.6791913865084597, 0.6791474401230498, 0.6791474401230498, 0.6791254669303449, 0.6791474401230498, 0.6793232256646891, 0.6792353328938694, 0.6791474401230498, 0.6791913865084597]
+AUC_median 0.6791694133157548
+AUC_iqr 4.394638540983209e-05
+cost [0.8798701298701299, 0.8798701298701299, 0.8798701298701299, 0.8798701298701299, 0.8798701298701299, 0.8798701298701299, 0.8798701298701299, 0.8798701298701299, 0.8798701298701299, 0.8798701298701299]
+COST_med 0.8798701298701299
+COST_iqr 0.0
+f1_pos_list [np.float64(0.6405228758169934), np.float64(0.6405228758169934), np.float64(0.6405228758169934), np.float64(0.6405228758169934), np.float64(0.6405228758169934), np.float64(0.6405228758169934), np.float64(0.6405228758169934), np.float64(0.6405228758169934), np.float64(0.6405228758169934), np.float64(0.6405228758169934)]
+f1_pos_med 0.6405228758169934
+total_tn 1000
+total_fp 850
+total_fn 250
+total_tp 980
+p= 0.5355191256830601
+r= 0.7967479674796748
+f= 0.6405228758169935
