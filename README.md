@@ -13,7 +13,10 @@ Este repositório contém os artefatos utilizados para reprodução parcial dos 
 
 O repositório contém um arquivo `Dockerfile` para facilitar a execução dos experimentos.
 
-1. Construa a imagem docker: `docker build -t es-experiment`
+1. Construa a imagem docker:
+ ```bash
+ docker build -t es-experiment .
+ ```
 2. Inicie um container:
 
 ```bash
