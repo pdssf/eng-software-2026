@@ -1,4 +1,4 @@
-class,method,count
+class,method_name,count
 org.apache.phoenix.jdbc.PhoenixDatabaseMetaData,NOVALUE,96
 org.apache.phoenix.query.QueryConstants,NOVALUE,33
 org.apache.phoenix.mapreduce.index.IndexVerificationResultRepository,NOVALUE,29

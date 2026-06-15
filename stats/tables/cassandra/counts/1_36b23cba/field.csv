@@ -1,4 +1,4 @@
-class,method,field,count
+class,method_name,field_name,count
 org.apache.cassandra.cql3.Cql_Parser$DFA21,specialStateTransition,NOVALUE,46
 org.apache.cassandra.tools.CMSOfflineTool$PrintDirectoryCmd,execute,NOVALUE,13
 org.apache.cassandra.cql3.Cql_Parser$DFA254,specialStateTransition,NOVALUE,5

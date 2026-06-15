@@ -21,8 +21,8 @@ def count_bugs(bugs):
     "type": count_bugs_by(bugs, ["type"]),
     "category": count_bugs_by(bugs, ["category"]),
     "class": count_bugs_by(bugs, ["class"]),
-    "method": count_bugs_by(bugs, ["class", "method"]),
-    "field": count_bugs_by(bugs, ["class", "method", "field"])
+    "method": count_bugs_by(bugs, ["class", "method_name"]),
+    "field": count_bugs_by(bugs, ["class", "method_name", "field_name"])
   }
 
 
@@ -37,8 +37,10 @@ def same_bug(b1, b2):
   return (
     same_bug_property(b1, b2, "type")
     and same_bug_property(b1, b2, "class")
-    and same_bug_property(b1, b2, "method")
-    and same_bug_property(b1, b2, "field")
+    and same_bug_property(b1, b2, "method_name")
+    and same_bug_property(b1, b2, "method_signature")
+    and same_bug_property(b1, b2, "field_name")
+    and same_bug_property(b1, b2, "field_signature")
   )
 
 

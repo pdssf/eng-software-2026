@@ -1,4 +1,4 @@
-class,method,count
+class,method_name,count
 org.apache.cassandra.cql3.Cql_Parser$DFA17,specialStateTransition,45
 org.apache.cassandra.net.ManyToOneConcurrentLinkedQueue,NOVALUE,15
 org.apache.cassandra.net.ManyToOneConcurrentLinkedQueuePadding1,NOVALUE,15

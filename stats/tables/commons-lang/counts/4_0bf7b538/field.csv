@@ -1,4 +1,4 @@
-class,method,field,count
+class,method_name,field_name,count
 org.apache.commons.lang3.ArrayUtils,addFirst,NOVALUE,9
 org.apache.commons.lang3.text.StrSubstitutor,&lt;init&gt;,NOVALUE,7
 org.apache.commons.lang3.BooleanUtils,toBooleanObject,NOVALUE,6

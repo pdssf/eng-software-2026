@@ -1,4 +1,4 @@
-class,method,field,count
+class,method_name,field_name,count
 org.apache.tools.ant.taskdefs.optional.ejb.GenericDeploymentTool,writeJar,NOVALUE,4
 org.apache.tools.ant.taskdefs.optional.ejb.WeblogicDeploymentTool,getWeblogicDescriptorHandler,NOVALUE,4
 org.apache.tools.ant.taskdefs.optional.splash.SplashScreen,&lt;init&gt;,NOVALUE,4

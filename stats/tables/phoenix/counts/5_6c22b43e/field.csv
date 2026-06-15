@@ -1,4 +1,4 @@
-class,method,field,count
+class,method_name,field_name,count
 org.apache.phoenix.jdbc.PhoenixConnection,&lt;init&gt;,NOVALUE,8
 org.apache.phoenix.compile.FromCompiler$SingleTableColumnResolver,&lt;init&gt;,NOVALUE,4
 org.apache.phoenix.iterate.OrderedResultIterator,&lt;init&gt;,NOVALUE,4

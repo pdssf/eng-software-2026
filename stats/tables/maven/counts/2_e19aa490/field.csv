@@ -1,4 +1,4 @@
-class,method,field,count
+class,method_name,field_name,count
 org.apache.maven.model.interpolation.StringVisitorModelInterpolator$ModelVisitor,visit,NOVALUE,50
 org.apache.maven.artifact.DefaultArtifact,&lt;init&gt;,NOVALUE,4
 org.apache.maven.plugin.PluginExecutionException,&lt;init&gt;,mojoExecution,4

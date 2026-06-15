@@ -1,4 +1,4 @@
-class,method,count
+class,method_name,count
 org.apache.tomcat.jni.FileInfo,NOVALUE,17
 org.apache.jasper.JspC,setArgs,14
 org.apache.coyote.Request,recycle,11

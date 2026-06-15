@@ -1,4 +1,4 @@
-class,method,field,count
+class,method_name,field_name,count
 org.apache.cassandra.cql3.Cql_Parser$DFA20,specialStateTransition,NOVALUE,46
 org.apache.cassandra.cql3.Cql_Parser$DFA235,specialStateTransition,NOVALUE,5
 org.apache.cassandra.simulator.asm.MethodLogger$Counting,visitEndOfClass,NOVALUE,5

@@ -1,4 +1,4 @@
-class,method,field,count
+class,method_name,field_name,count
 org.apache.catalina.tribes.io.XByteBuffer,append,bufSize,6
 jakarta.servlet.AsyncEvent,&lt;init&gt;,context,4
 jakarta.servlet.ServletSecurityElement,&lt;init&gt;,NOVALUE,4

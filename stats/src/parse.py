@@ -113,10 +113,12 @@ def extract_bug_properties(bug_instance):
     bug["class"] = cclass["attributes"]["classname"]
 
   if method != None:
-    bug["method"] = method["attributes"]["name"]
+    bug["method_name"] = method["attributes"]["name"]
+    bug["method_signature"] = method["attributes"]["signature"]
 
   if field != None:
-    bug["field"] = field["attributes"]["name"]
+    bug["field_name"] = field["attributes"]["name"]
+    bug["field_signature"] = field["attributes"]["signature"]
 
   return bug
 

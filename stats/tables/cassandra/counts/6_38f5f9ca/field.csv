@@ -1,4 +1,4 @@
-class,method,field,count
+class,method_name,field_name,count
 org.apache.cassandra.cql3.Cql_Parser$DFA17,specialStateTransition,NOVALUE,45
 org.apache.cassandra.metrics.DecayingEstimatedHistogramReservoir,&lt;init&gt;,NOVALUE,5
 org.apache.cassandra.cql3.Cql_Parser,non_type_ident,NOVALUE,4
